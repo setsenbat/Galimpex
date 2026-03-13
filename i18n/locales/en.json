@@ -1,392 +1,145 @@
 {
-    "inventoryControlMessage": "Inventory Control Solutions",
-    "home": "Home",
-    "login": "Login",
-    "logout": "Logout",
-    "products": "Products",
-    "product": "Product",
-    "search": "Enter product to search...",
-    "workwear": "Workwear and Personal Protective Equipment",
-    "factory": "Domestic Manufacturer",
-    "mainHeroTitle": "Deel Traditional Mongolian Clothing",
-    "heroSubText": "Taking Orders",
-    "heroButtonTitle": "Order Now",
-    "admin": {
-        "menuTitle": "Amuso Admin Menu"
+  "landing": {
+    "nav": {
+      "about": "About",
+      "services": "Services",
+      "packages": "Packages",
+      "compliance": "Compliance",
+      "projects": "Projects",
+      "contact": "Contact",
+      "getQuote": "Get a quote",
+      "subscription": "Subscription"
     },
-    "order": "Order",
-    "about": "About Us",
-    "casestudies": "Customer Stories",
-    "news": "News",
-    "contactus": "Contact Us",
-    "industries": "Industries",
-    "solutions": "Solutions",
-    "productDetails": {
-        "name": "Product Name",
-        "price": "Price",
-        "details": "Details",
-        "specifications": "Product Specifications",
-        "category": "Product Category",
-        "size": "Product Size",
-        "color": "Product Color",
-        "addToCart": "Add to Cart"
+    "hero": {
+      "title": "Fire safety you can prove.",
+      "subtitle": "Your trusted partner",
+      "description": "Gal Impex helps buildings, offices and industrial sites stay compliant with reliable fire equipment, installation and inspection programs.",
+      "ctaPrimary": "Request site survey",
+      "ctaSecondary": "Explore services",
+      "checklist": {
+        "title": "Quick checklist",
+        "badge": "Recommended",
+        "extinguisher": "Extinguisher inspection + refill log",
+        "alarm": "Alarm / detection system maintenance",
+        "evacuation": "Evacuation signage + emergency lighting",
+        "training": "Staff training + drill support"
+      },
+      "stats": {
+        "fast": "Fast",
+        "response": "Response",
+        "standard": "MNS / NFPA",
+        "compliance": "Compliance",
+        "endToEnd": "End-to-end",
+        "service": "Service"
+      }
     },
-    "orderDetails": {
-        "orderNumber": "Order Number",
-        "orderDate": "Order Date",
-        "status": "Status",
-        "totalAmount": "Total Amount",
-        "paymentMethod": "Payment Method",
-        "shippingAddress": "Shipping Address",
-        "billingAddress": "Billing Address",
-        "orderDetails": "Order Details"
+    "services": {
+      "title": "Services",
+      "description": "From equipment supply to installation and ongoing maintenance — built for audits and long-term reliability.",
+      "learnMore": "Learn more →",
+      "supply": {
+        "title": "Equipment Supply",
+        "description": "Fire extinguishers, cabinets, hoses and essential fire safety equipment supplied to meet building safety requirements."
+      },
+      "installation": {
+        "title": "System Installation",
+        "description": "Design and installation of fire alarm and suppression systems tailored to the facility and compliance standards."
+      },
+      "inspection": {
+        "title": "Inspection & Refill",
+        "description": "Regular inspection, testing and extinguisher refill services to keep fire protection equipment operational."
+      },
+      "drills": {
+        "title": "Training & Drills",
+        "description": "Fire safety training and evacuation drills to prepare staff for emergency response."
+      },
+      "reporting": {
+        "title": "Audit-ready Reporting",
+        "description": "Clear service records, inspection logs and documentation prepared for regulatory inspections and audits."
+      }
     },
-    "productForm": {
-        "title": "Add New Product",
-        "sections": {
-            "basicInfo": "Basic Information",
-            "pricingInventory": "Pricing & Inventory",
-            "images": "Product Images",
-            "variants": "Product Variants",
-            "googleShopping": "Google Shopping",
-            "seo": "SEO",
-            "requiredInfo": "Required Information"
-        },
-        "fields": {
-            "productTitle": "Product Title",
-            "enterProductTitle": "Enter product title",
-            "urlHandle": "URL Handle",
-            "urlHandlePlaceholder": "product-url-handle",
-            "vendor": "Vendor",
-            "enterVendorName": "Enter vendor name",
-            "category": "Category",
-            "selectCategory": "Select a category",
-            "productType": "Product Type",
-            "enterProductType": "Enter product type",
-            "tags": "Tags",
-            "selectTags": "Select tags",
-            "description": "Description",
-            "enterDescription": "Enter product description",
-            "published": "Published",
-            "status": "Status",
-            "sku": "SKU",
-            "skuPlaceholder": "SKU-001",
-            "barcode": "Barcode",
-            "enterBarcode": "Enter barcode",
-            "originalPrice": "Original Price",
-            "discountedPrice": "Discounted Price",
-            "totalInventory": "Total Inventory",
-            "availableInventory": "Available Inventory",
-            "reservedInventory": "Reserved Inventory",
-            "currency": "Currency",
-            "mainImage": "Main Image",
-            "additionalImages": "Additional Images",
-            "variantTitle": "Variant Title",
-            "variantTitlePlaceholder": "Variant title",
-            "variantSku": "Variant SKU",
-            "variantSkuPlaceholder": "Variant SKU",
-            "variantBarcode": "Variant Barcode",
-            "variantBarcodePlaceholder": "Variant barcode",
-            "price": "Price",
-            "inventory": "Inventory",
-            "mpn": "MPN (Manufacturer Part Number)",
-            "enterMpn": "Enter MPN",
-            "gtin": "GTIN (Global Trade Item Number)",
-            "enterGtin": "Enter GTIN",
-            "brand": "Brand",
-            "enterBrand": "Enter brand",
-            "condition": "Condition",
-            "customLabel0": "Custom Label 1",
-            "customLabel1": "Custom Label 2",
-            "customLabel2": "Custom Label 3",
-            "customLabel3": "Custom Label 4",
-            "customLabel4": "Custom Label 5",
-            "enterCustomLabel": "Enter custom label",
-            "metaTitle": "Meta Title",
-            "enterMetaTitle": "Enter meta title",
-            "metaDescription": "Meta Description",
-            "enterMetaDescription": "Enter meta description"
-        },
-        "actions": {
-            "addProduct": "Add Product",
-            "addVariant": "Add Variant",
-            "saveProduct": "Save Product",
-            "cancel": "Cancel",
-            "generateSku": "Generate SKU",
-            "generateBarcode": "Generate Barcode"
-        },
-        "status": {
-            "active": "Active - All Channels",
-            "online": "Online Only",
-            "brick": "Store Only",
-            "mvm": "In Development - Marketing",
-            "draft": "In Development",
-            "paused": "Paused",
-            "archived": "Archived"
-        },
-        "toggleDetails": {
-            "show": "Show all details",
-            "hide": "Hide details"
-        },
-        "conditions": {
-            "new": "New",
-            "used": "Used",
-            "refurbished": "Refurbished"
-        },
-        "validation": {
-            "required": "This field is required",
-            "invalidPrice": "Please enter a valid price",
-            "invalidInventory": "Please enter a valid quantity"
-        }
+    "packages": {
+      "title": "Subscription packages",
+      "from": "From",
+      "mostPopular": "Most popular",
+      "basic": {
+        "title": "Basic",
+        "price": "₮150,000",
+        "subtitle": "For small offices",
+        "annual": "Annual inspection",
+        "refill": "Extinguisher refill",
+        "support": "Phone support"
+      },
+      "standard": {
+        "title": "Standard",
+        "price": "₮350,000",
+        "quarterly": "Quarterly inspection",
+        "training": "Staff training",
+        "checklist": "Compliance checklist",
+        "sla": "Response SLA"
+      },
+      "premium": {
+        "title": "Premium",
+        "price": "₮750,000",
+        "subtitle": "For industrial facilities",
+        "monthly": "Monthly inspection",
+        "maintenance": "Full system maintenance",
+        "reporting": "Compliance reporting",
+        "engineer": "Dedicated engineer"
+      }
     },
-    "loginPage": {
-        "title": "Welcome back!",
-        "description": "Don't have an account?",
-        "signUp": "Sign up",
-        "forgotPassword": "Forgot password?",
-        "errorSigningIn": "Error signing in",
-        "termsAgreement": "By signing in, you agree to our",
-        "termsOfService": "Terms of Service",
-        "email": "Email",
-        "emailPlaceholder": "Enter your email",
-        "password": "Password",
-        "passwordPlaceholder": "Enter your password",
-        "rememberMe": "Remember me",
-        "google": "Google",
-        "github": "GitHub",
-        "success": "Success",
-        "loggedInWithGoogle": "Logged in with Google!",
-        "loggedInWithGitHub": "Logged in with GitHub!",
-        "loggedIn": "Logged in!",
-        "googleLoginError": "Google Login error",
-        "githubLoginError": "GitHub Login error",
-        "loginError": "Login error",
-        "invalidEmail": "Invalid email",
-        "passwordMinLength": "Must be at least 8 characters",
-        "invalidCredentials": "Invalid email or password",
-        "tooManyRequests": "Too many failed attempts. Please try again later.",
-        "userNotFound": "User not found.",
-        "wrongPassword": "Incorrect password.",
-        "emailAlreadyInUse": "Email is already in use.",
-        "weakPassword": "Password is too weak.",
-        "userDisabled": "Account has been disabled.",
-        "operationNotAllowed": "Operation not allowed.",
-        "networkError": "Network error. Please check your connection.",
-        "requiresRecentLogin": "Please login again to continue."
+    "compliance": {
+      "title": "Compliance & quality",
+      "checklists": {
+        "title": "Standard checklists",
+        "description": "Inspection protocols aligned with MNS and NFPA."
+      },
+      "proof": {
+        "title": "Proof of service",
+        "description": "Logs, labels and reports ready for audits."
+      },
+      "culture": {
+        "title": "Safety culture",
+        "description": "Training programs that improve real behaviour."
+      }
     },
-    "sale": {
-        "promo": "Sale promotions"
+    "trust": {
+      "title": "Trusted standards",
+      "description": "Certified and aligned with leading international fire safety standards."
     },
-    "productsTable": {
-        "columns": {
-            "title": "Title",
-            "description": "Description",
-            "price": "Price",
-            "category": "Category",
-            "type": "Type",
-            "stock": "Stock",
-            "date": "Date Added",
-            "image": "Images",
-            "status": "Status",
-            "actions": "Actions",
-            "collapse": "Collapse",
-            "expand": "Expand",
-            "edit": "Edit",
-            "duplicate": "Duplicate",
-            "delete": "Delete"
-        }
+    "contact": {
+      "title": "Contact",
+      "address": "Building 9, #3, Olympic Street, 1st Khoroo, Sukhbaatar District, Ulaanbaatar 14240, Mongolia",
+      "namePlaceholder": "Name",
+      "companyPlaceholder": "Company / Building",
+      "phonePlaceholder": "Phone",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message",
+      "submit": "Request a quote"
     },
-    "productList": {
-        "columns": "Columns"
-    },
-    "authForm": {
-        "submit": "Sign In"
-    },
-    "signupPage": {
-        "title": "Create Account",
-        "description": "Already have an account?",
-        "signIn": "Sign in",
-        "email": "Email",
-        "emailPlaceholder": "Enter your email",
-        "password": "Password",
-        "passwordPlaceholder": "Enter your password",
-        "confirmPassword": "Confirm Password",
-        "confirmPasswordPlaceholder": "Confirm your password",
-        "rememberMe": "Remember me",
-        "google": "Google",
-        "success": "Success",
-        "signedUp": "Account created successfully!",
-        "signedUpWithGoogle": "Account created with Google!",
-        "signupError": "Sign up error",
-        "googleSignupError": "Google Sign up error",
-        "errorSigningUp": "Error creating account",
-        "invalidEmail": "Invalid email",
-        "passwordMinLength": "Must be at least 8 characters",
-        "passwordsDoNotMatch": "Passwords do not match"
-    },
-    "managerSidebar": {
-        "sections": {
-            "dashboard": "Dashboard",
-            "orders": "Orders",
-            "customers": "Customers",
-            "products": "Products",
-            "crm": "CRM",
-            "finances": "Finances",
-            "salesChannels": "Sales Channels",
-            "helpSupport": "Help & Support",
-            "logout": "Logout",
-            "storeManagement": "Store Management"
-        },
-        "items": {
-            "overview": {
-                "label": "Overview",
-                "description": "Your store dashboard with key metrics and insights."
-            },
-            "analytics": {
-                "label": "Analytics",
-                "description": "View detailed analytics and reports."
-            },
-            "activity": {
-                "label": "Activity",
-                "description": "Recent activities and notifications."
-            },
-            "settings": {
-                "label": "Settings",
-                "description": "Configure your store settings and preferences."
-            },
-            "newOrders": {
-                "label": "New Orders",
-                "description": "View and process new orders."
-            },
-            "allOrders": {
-                "label": "All Orders",
-                "description": "View and manage all orders."
-            },
-            "drafts": {
-                "label": "Drafts",
-                "description": "View and manage draft orders."
-            },
-            "returns": {
-                "label": "Returns",
-                "description": "Process returns and exchanges."
-            },
-            "giftCards": {
-                "label": "Gift Cards",
-                "description": "Manage gift cards and vouchers."
-            },
-            "allCustomers": {
-                "label": "All Customers",
-                "description": "Manage your customer database"
-            },
-            "segments": {
-                "label": "Segments",
-                "description": "Create customer segments"
-            },
-            "reviews": {
-                "label": "Reviews",
-                "description": "Manage product reviews"
-            },
-            "messages": {
-                "label": "Messages",
-                "description": "Customer messages and inquiries"
-            },
-            "discounts": {
-                "label": "Discounts",
-                "description": "Manage discounts and promotions"
-            },
-            "allProducts": {
-                "label": "All Products",
-                "description": "Manage your product catalog"
-            },
-            "inventory": {
-                "label": "Inventory",
-                "description": "Manage stock levels and variants"
-            },
-            "categories": {
-                "label": "Categories",
-                "description": "Organize products into categories"
-            },
-            "collections": {
-                "label": "Collections",
-                "description": "Create and manage collections"
-            },
-            "leads": {
-                "label": "Leads",
-                "description": "Manage potential customer leads and follow-ups"
-            },
-            "opportunities": {
-                "label": "Opportunities",
-                "description": "Track and manage business opportunities"
-            },
-            "projects": {
-                "label": "Projects",
-                "description": "Manage ongoing and upcoming projects"
-            },
-            "tenders": {
-                "label": "Tenders",
-                "description": "View and manage tender applications"
-            },
-            "coldContacts": {
-                "label": "Cold contacts",
-                "description": "Manage and track cold outreach efforts"
-            },
-            "bankAccounts": {
-                "label": "Bank Accounts",
-                "description": "Manage connected bank accounts and balances"
-            },
-            "invoices": {
-                "label": "Invoices",
-                "description": "Create, view, and manage invoices"
-            },
-            "payments": {
-                "label": "Payments",
-                "description": "Track and manage payment transactions"
-            },
-            "expenses": {
-                "label": "Expenses",
-                "description": "Track and categorize business expenses"
-            },
-            "reports": {
-                "label": "Reports",
-                "description": "View financial reports and analytics"
-            },
-            "onlineStore": {
-                "label": "Online Store",
-                "description": "Manage your online store"
-            },
-            "marketplaces": {
-                "label": "Marketplaces",
-                "description": "Connect to marketplaces"
-            },
-            "socialMedia": {
-                "label": "Social Media",
-                "description": "Connect social media channels"
-            },
-            "pos": {
-                "label": "POS",
-                "description": "Point of Sale system"
-            },
-            "progress": {
-                "label": "Progress",
-                "description": "Show a horizontal bar to indicate task progression."
-            },
-            "documentation": {
-                "label": "Documentation"
-            },
-            "supportCenter": {
-                "label": "Support Center"
-            },
-            "feedback": {
-                "label": "Feedback"
-            },
-            "vendors": {
-                "label": "Vendors",
-                "description": "Manage your vendors and suppliers."
-            },
-            "storeEditor": {
-                "label": "Store Editor",
-                "description": "Customize storefront content and layout."
-            }
-        }
+    "footer": {
+      "tagline": "Fire Safety | Mongolia",
+      "description": "Fire Safety Engineering since 1971",
+      "company": {
+        "title": "Company",
+        "about": "About",
+        "projects": "Projects",
+        "careers": "Careers"
+      },
+      "services": {
+        "title": "Services",
+        "supply": "Equipment Supply",
+        "installation": "System Installation",
+        "inspection": "Inspection & Refill",
+        "training": "Training & Drills"
+      },
+      "compliance": {
+        "title": "Compliance",
+        "standards": "Standards",
+        "certifications": "Certifications",
+        "contact": "Contact"
+      },
+      "copyright": "All rights reserved."
     }
+  }
 }
