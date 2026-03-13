@@ -2,8 +2,8 @@
   <div class="font-sans text-gray-900" >
 
     <!-- Navbar -->
-    <header class="max-w-7xl mx-auto border-b border-gray-200 bg-white sticky top-0 z-50" style="background-color: #EEEFF1;">
-      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <header class="mx-auto border-b border-gray-200 bg-white sticky top-0 z-50" style="background-color: #EEEFF1;">
+      <div class="mx-auto px-6 h-16 flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center gap-3">
           <div class="w-9 h-9 bg-gray-900 text-white flex items-center justify-center font-bold text-sm rounded-sm">
@@ -34,7 +34,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-6 pt-14 pb-0 bg-cover bg-center bg-no-repeat" :style="{ backgroundImage: `url(${heroImage})` }">
+    <section class="p-50 mx-auto px-6 pt-14 pb-0 bg-cover bg-center bg-no-repeat" :style="{ backgroundImage: `url(${heroImage})` }">
       <div class="flex gap-12 items-start">
         <!-- Left content -->
         <div class="flex-1 pt-4">
