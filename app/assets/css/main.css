@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-text: #373435;
+  --color-brand-red: #A40000;
+  --color-brand-green: #3C7A48;
+  --color-brand-yellow: #FAAA31;
+}
+
+@layer base {
+  body {
+    color: #373435;
+  }
+}

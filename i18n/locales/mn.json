@@ -1,0 +1,399 @@
+{
+    "inventoryControlMessage": "Бараа материалын удирдлагын шийдлүүд",
+    "home": "Нүүр хуудас",
+    "login": "Нэвтрэх",
+    "logout": "Гарах",
+    "products": "Бараа бүтээгдэхүүн",
+    "product": "Бараа бүтээгдэхүүн",
+    "search": "Хайх бараагаа оруулан уу...",
+    "workwear": "Хөдөлмөр хамгаалал, ажлын хувцас",
+    "factory": "Дотоодын үйлдвэр",
+    "mainHeroTitle": "Дээл үндэсний хувцас",
+    "heroSubText": "Захиалга авч байна",
+    "heroButtonTitle": "Захиалах",
+    "admin": {
+        "menuTitle": "Амүсо Админ Цэс"
+    },
+    "order": "Захиалах",
+    "about": "Бидний тухай",
+    "casestudies": "Харилцагчидын түүх",
+    "news": "Мэдээ мэдээлэл",
+    "contactus": "Холбоо барих",
+    "industries": "Жишээнүүд",
+    "solutions": "Шийдлүүд",
+    "cart": "Сагс",
+    "productDetails": {
+        "name": "Барааны нэр",
+        "price": "Үнэ",
+        "details": "Дэлгэрэнгүй",
+        "specifications": "Барааны мэдээлэл",
+        "category": "Барааны төрөл",
+        "size": "Барааны хэмжээ",
+        "color": "Барааны өнгө",
+        "addToCart": "Сагсанд нэмэх"
+    },
+    "orderDetails": {
+        "orderNumber": "Захиалгын дугаар",
+        "orderDate": "Захиалгын огноо",
+        "status": "Төлөв",
+        "totalAmount": "Нийт дүн",
+        "paymentMethod": "Төлбөрийн арга",
+        "shippingAddress": "Хүргэлтийн хаяг",
+        "billingAddress": "Төлбөрийн хаяг",
+        "orderDetails": "Захиалгын дэлгэрэнгүй"
+    },
+    "productForm": {
+        "title": "Шинэ бүтээгдэхүүн нэмэх",
+        "sections": {
+            "basicInfo": "Үндсэн мэдээлэл",
+            "pricingInventory": "Үнэ болон нөөц",
+            "images": "Бүтээгдэхүүний зурагнууд",
+            "variants": "Бүтээгдэхүүний хувилбарууд",
+            "googleShopping": "Google Shopping",
+            "seo": "SEO",
+            "requiredInfo": "Шаардагдах мэдээлэл"
+        },
+        "fields": {
+            "productTitle": "Бүтээгдэхүүний нэр",
+            "enterProductTitle": "Бүтээгдэхүүний нэрийг оруулна уу",
+            "urlHandle": "URL хаяг",
+            "urlHandlePlaceholder": "buteegdehuunii-ner",
+            "vendor": "Нийлүүлэгч",
+            "enterVendorName": "Нийлүүлэгчийн нэрийг оруулна уу",
+            "category": "Ангилал",
+            "selectCategory": "Ангилал сонгоно уу",
+            "productType": "Бүтээгдэхүүний төрөл",
+            "enterProductType": "Бүтээгдэхүүний төрлийг оруулна уу",
+            "tags": "Tag тэмдэглэгээ",
+            "selectTags": "Tag нэмнэ уу",
+            "description": "Дэлгэрэнгүй тайлбар",
+            "enterDescription": "Бүтээгдэхүүний тайлбарыг оруулна уу",
+            "published": "Нийтлэх",
+            "status": "Төлөв",
+            "sku": "SKU код",
+            "skuPlaceholder": "SKU-001",
+            "barcode": "Баркод",
+            "enterBarcode": "Баркод оруулна уу",
+            "originalPrice": "Үндсэн үнэ",
+            "discountedPrice": "Хямдралтай үнэ",
+            "totalInventory": "Нийт үлдэгдэл",
+            "availableInventory": "Боломжтой үлдэгдэл",
+            "reservedInventory": "Нөөцөөлсөн үлдэгдэл",
+            "currency": "Валют",
+            "mainImage": "Үндсэн зураг",
+            "additionalImages": "Нэмэлт зургууд",
+            "variantTitle": "Хувилбарын нэр",
+            "variantTitlePlaceholder": "Хувилбарын нэр",
+            "variantSku": "Хувилбарын SKU",
+            "variantSkuPlaceholder": "Хувилбарын SKU код",
+            "variantBarcode": "Хувилбарын баркод",
+            "variantBarcodePlaceholder": "Хувилбарын баркод",
+            "price": "Үнэ",
+            "inventory": "Нөөц",
+            "mpn": "MPN (Үйлдвэрлэгчийн эд ангийн дугаар)",
+            "enterMpn": "MPN оруулна уу",
+            "gtin": "GTIN (Дэлхийн барааны дугаарлалтын систем)",
+            "enterGtin": "GTIN оруулна уу",
+            "brand": "Брэнд/Үйлдвэрлэгч",
+            "enterBrand": "Брэнд оруулна уу",
+            "condition": "Нөхцөл",
+            "customLabel0": "Нэмэлт мэдээлэл 1",
+            "customLabel1": "Нэмэлт мэдээлэл 2",
+            "customLabel2": "Нэмэлт мэдээлэл 3",
+            "customLabel3": "Нэмэлт мэдээлэл 4",
+            "customLabel4": "Нэмэлт мэдээлэл 5",
+            "enterCustomLabel": "Нэмэлт мэдээлэл оруулна уу",
+            "metaTitle": "SEO гарчиг",
+            "enterMetaTitle": "SEO гарчиг оруулна уу",
+            "metaDescription": "SEO тайлбар",
+            "enterMetaDescription": "SEO тайлбар оруулна уу"
+        },
+        "actions": {
+            "addProduct": "Бүтээгдэхүүн нэмэх",
+            "addVariant": "Хувилбар нэмэх",
+            "saveProduct": "Бүтээгдэхүүн хадгалах",
+            "cancel": "Цуцлах",
+            "generateSku": "SKU үүсгэх",
+            "generateBarcode": "Баркод үүсгэх"
+        },
+        "status": {
+            "active": "Идэвхтэй бүх сувгаар борлуулна",
+            "online": "Зөвхөн онлайн",
+            "brick": "Зөвхөн дэлгүүр",
+            "mvm": "Боловсруулж байгаа, маркетинг хийх",
+            "draft": "Боловсруулж байгаа",
+            "paused": "Түр зогсоосон",
+            "archived": "Зогсоосон"
+        },
+        "toggleDetails": {
+            "show": "Барааны дэлгэрэнгүй мэдээлэл оруулах",
+            "hide": "Дэлгэрэнгүй мэдээлэл хаах"
+        },
+        "conditions": {
+            "new": "Шинэ",
+            "used": "Хэрэглэсэн",
+            "refurbished": "Шинэчилсэн"
+        },
+        "validation": {
+            "required": "Энэ талбар заавал бөглөх шаардлагатай",
+            "invalidPrice": "Зөв үнийг оруулна уу",
+            "invalidInventory": "Зөв тоо хэмжээг оруулна уу"
+        }
+    },
+    "loginPage": {
+        "title": "Тавтай морилно уу!",
+        "description": "Бүртгэл байхгүй юу?",
+        "signUp": "Бүртгүүлэх",
+        "forgotPassword": "Нууц үг мартсан уу?",
+        "errorSigningIn": "Нэвтрэхэд алдаа гарлаа",
+        "termsAgreement": "Нэвтрэх замаар та манай",
+        "termsOfService": "Үйлчилгээний нөхцөл",
+        "email": "И-мэйл",
+        "emailPlaceholder": "И-мэйл хаягаа оруулна уу",
+        "password": "Нууц үг",
+        "passwordPlaceholder": "Нууц үгээ оруулна уу",
+        "rememberMe": "Намайг санах",
+        "google": "Google",
+        "github": "GitHub",
+        "success": "Амжилттай",
+        "loggedInWithGoogle": "Google-ээр амжилттай нэвтэрлээ!",
+        "loggedInWithGitHub": "GitHub-ээр амжилттай нэвтэрлээ!",
+        "loggedIn": "Амжилттай нэвтэрлээ!",
+        "loginSuccess": "Амжилттай нэвтэрлээ!",
+        "googleLoginError": "Google нэвтрэлтийн алдаа",
+        "githubLoginError": "GitHub нэвтрэлтийн алдаа",
+        "loginError": "Нэвтрэлтийн алдаа",
+        "invalidEmail": "И-мэйл хаяг буруу байна",
+        "passwordMinLength": "Хамгийн багадаа 8 тэмдэгт байх ёстой",
+        "invalidCredentials": "И-мэйл эсвэл нууц үг буруу байна",
+        "tooManyRequests": "Олон удаа оролдсон тул түр хүлээнэ үү.",
+        "userNotFound": "Хэрэглэгч олдсонгүй.",
+        "wrongPassword": "Нууц үг буруу байна.",
+        "emailAlreadyInUse": "И-мэйл хаяг аль хэдийн ашиглагдаж байна.",
+        "weakPassword": "Нууц үг хэт сул байна.",
+        "userDisabled": "Бүртгэл идэвхгүй болсон байна.",
+        "operationNotAllowed": "Үйлдэл зөвшөөрөгдөөгүй.",
+        "networkError": "Сүлжээний алдаа. Холболтоо шалгана уу.",
+        "requiresRecentLogin": "Үргэлжлүүлэхийн тулд дахин нэвтэрнэ үү."
+    },
+    "sale": {
+        "promo": "Хямдрал, урамшуулал"
+    },
+    "productsTable": {
+        "columns": {
+            "title": "Нэр",
+            "description": "Бүтээгдэхүүний дэлгэрэнгүй",
+            "price": "Үнэ",
+            "category": "Ангилал",
+            "type": "Төрөл",
+            "stock": "Үлдэгдэл",
+            "date": "Нэмсэн огноо",
+            "image": "Зураг",
+            "status": "Төлөв",
+            "actions": "Үйлдлүүд",
+            "collapse": "Хаах",
+            "expand": "Нээх",
+            "edit": "Засах",
+            "duplicate": "Хуулбарлах",
+            "delete": "Устгах"
+        }
+    },
+    "productList": {
+        "columns": "Багана сонгох",
+        "title": "Тавтай морилно уу",
+        "providerLabel": "Эсвэл үргэлжлүүлэх"
+    },
+    "loadingPleaseWait": "Уншиж байна, түр хүлээнэ үү",
+    "authForm": {
+        "submit": "Нэвтрэх",
+        "title": "Тавтай морилно уу",
+        "providerLabel": "Эсвэл үргэлжлүүлэх"
+    },
+    "signupPage": {
+        "title": "Бүртгэл үүсгэх",
+        "description": "Бүртгэл байна уу?",
+        "signIn": "Нэвтрэх",
+        "email": "И-мэйл",
+        "emailPlaceholder": "И-мэйл хаягаа оруулна уу",
+        "password": "Нууц үг",
+        "passwordPlaceholder": "Нууц үгээ оруулна уу",
+        "confirmPassword": "Нууц үг баталгаажуулах",
+        "confirmPasswordPlaceholder": "Нууц үгээ баталгаажуулна уу",
+        "rememberMe": "Намайг санах",
+        "google": "Google",
+        "success": "Амжилттай",
+        "signedUp": "Бүртгэл амжилттай үүслээ!",
+        "signedUpWithGoogle": "Google-ээр бүртгэл амжилттай үүслээ!",
+        "signupError": "Бүртгүүлэхэд алдаа гарлаа",
+        "googleSignupError": "Google бүртгүүлэхэд алдаа гарлаа",
+        "errorSigningUp": "Бүртгэл үүсгэхэд алдаа гарлаа",
+        "invalidEmail": "И-мэйл хаяг буруу байна",
+        "passwordMinLength": "Хамгийн багадаа 8 тэмдэгт байх ёстой",
+        "passwordsDoNotMatch": "Нууц үгс тохирохгүй байна"
+    },
+    "managerSidebar": {
+        "sections": {
+            "dashboard": "Хяналтын самбар",
+            "orders": "Захиалгууд",
+            "customers": "Харилцагчид",
+            "products": "Бүтээгдэхүүн",
+            "crm": "CRM",
+            "finances": "Санхүү",
+            "salesChannels": "Борлуулалтын сувгууд",
+            "helpSupport": "Тусламж ба дэмжлэг",
+            "logout": "Гарах",
+            "storeManagement": "Дэлгүүрийн удирдлага"
+        },
+        "items": {
+            "overview": {
+                "label": "Тойм",
+                "description": "Дэлгүүрийн үндсэн үзүүлэлтүүдийн самбар"
+            },
+            "analytics": {
+                "label": "Аналитик",
+                "description": "Дэлгэрэнгүй аналитик тайланг харах"
+            },
+            "activity": {
+                "label": "Идэвх",
+                "description": "Сүүлийн үйл ажиллагаа болон мэдэгдлүүд"
+            },
+            "settings": {
+                "label": "Тохиргоо",
+                "description": "Дэлгүүрийн тохиргоо, сонголтыг удирдах"
+            },
+            "newOrders": {
+                "label": "Шинэ захиалга",
+                "description": "Шинэ захиалгыг харах, боловсруулах"
+            },
+            "allOrders": {
+                "label": "Бүх захиалга",
+                "description": "Бүх захиалгыг харах, удирдах"
+            },
+            "drafts": {
+                "label": "Ноорог",
+                "description": "Ноорог захиалгыг харах, удирдах"
+            },
+            "returns": {
+                "label": "Буцаалт",
+                "description": "Буцаалт, солилцоог боловсруулах"
+            },
+            "giftCards": {
+                "label": "Бэлгийн карт",
+                "description": "Бэлгийн карт, ваучер удирдах"
+            },
+            "allCustomers": {
+                "label": "Бүх харилцагч",
+                "description": "Харилцагчдын мэдээллийн сан удирдах"
+            },
+            "segments": {
+                "label": "Сегментүүд",
+                "description": "Харилцагчийн сегмент үүсгэх"
+            },
+            "reviews": {
+                "label": "Сэтгэгдэл",
+                "description": "Бүтээгдэхүүний сэтгэгдлийг удирдах"
+            },
+            "messages": {
+                "label": "Мессеж",
+                "description": "Харилцагчийн мессеж, лавлагаа"
+            },
+            "discounts": {
+                "label": "Хөнгөлөлт",
+                "description": "Хөнгөлөлт, урамшуулал удирдах"
+            },
+            "allProducts": {
+                "label": "Бүх бүтээгдэхүүн",
+                "description": "Бүтээгдэхүүний каталог удирдах"
+            },
+            "inventory": {
+                "label": "Нөөц",
+                "description": "Үлдэгдэл, хувилбар удирдах"
+            },
+            "categories": {
+                "label": "Ангилал",
+                "description": "Бүтээгдэхүүнийг ангиллаар зохион байгуулах"
+            },
+            "collections": {
+                "label": "Цуглуулга",
+                "description": "Цуглуулга үүсгэж, удирдах"
+            },
+            "leads": {
+                "label": "Лийд",
+                "description": "Боломжит харилцагчийн лийдүүдийг удирдах"
+            },
+            "opportunities": {
+                "label": "Боломж",
+                "description": "Бизнесийн боломжийг хянах, удирдах"
+            },
+            "projects": {
+                "label": "Төсөл",
+                "description": "Одоогийн болон ирээдүйн төслийг удирдах"
+            },
+            "tenders": {
+                "label": "Тендер",
+                "description": "Тендерийн хүсэлтийг харах, удирдах"
+            },
+            "coldContacts": {
+                "label": "Хүйтэн харилцагч",
+                "description": "Хүйтэн харилцааг удирдах, хянах"
+            },
+            "bankAccounts": {
+                "label": "Банкны данс",
+                "description": "Холбогдсон данс, үлдэгдэл удирдах"
+            },
+            "invoices": {
+                "label": "Нэхэмжлэл",
+                "description": "Нэхэмжлэл үүсгэх, харах, удирдах"
+            },
+            "payments": {
+                "label": "Төлбөр",
+                "description": "Төлбөрийн гүйлгээг хянах, удирдах"
+            },
+            "expenses": {
+                "label": "Зардал",
+                "description": "Бизнесийн зардлыг хянах, ангилах"
+            },
+            "reports": {
+                "label": "Тайлан",
+                "description": "Санхүүгийн тайлан, аналитикийг харах"
+            },
+            "onlineStore": {
+                "label": "Онлайн дэлгүүр",
+                "description": "Онлайн дэлгүүрээ удирдах"
+            },
+            "marketplaces": {
+                "label": "Маркетплейсүүд",
+                "description": "Маркетплейстэй холбох"
+            },
+            "socialMedia": {
+                "label": "Сошиал медиа",
+                "description": "Сошиал сувгууд холбох"
+            },
+            "pos": {
+                "label": "POS",
+                "description": "Борлуулалтын цэгийн систем"
+            },
+            "progress": {
+                "label": "Ахиц",
+                "description": "Даалгаврын явцыг харуулах"
+            },
+            "documentation": {
+                "label": "Баримтжуулалт"
+            },
+            "supportCenter": {
+                "label": "Тусламжийн төв"
+            },
+            "feedback": {
+                "label": "Санал хүсэлт"
+            },
+            "vendors": {
+                "label": "Нийлүүлэгчид",
+                "description": "Нийлүүлэгчид болон түншүүдийг удирдах."
+            },
+            "storeEditor": {
+                "label": "Дэлгүүрийн засварлагч",
+                "description": "Дэлгүүрийн контент ба байршлыг тохируулах."
+            }
+        }
+    }
+}

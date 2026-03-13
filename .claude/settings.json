@@ -7,7 +7,11 @@
       "Bash(npx nuxi@latest init . --template minimal --package-manager npm --no-install --force --no-gitInit)",
       "Bash(npx nuxi@latest init . --template minimal --package-manager npm --no-install --force --no-gitInit 2)",
       "Bash(1:*)",
-      "Bash(npm install)"
+      "Bash(npm install)",
+      "Bash(npm install @nuxtjs/i18n)",
+      "Bash(npm run postinstall)",
+      "Bash(npm install @nuxt/icon)",
+      "Bash(npm install @iconify-json/heroicons)"
     ]
   }
 }
