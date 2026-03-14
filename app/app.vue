@@ -31,29 +31,34 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative md:h-[90vh] h-[60vh] bg-[75%_55%] md:bg-cover bg-no-repeat flex flex-col" :style="{ backgroundImage: `url(${heroImage})`, backgroundSize: '50% auto' }">
+    <section class="relative md:h-[90vh] h-[60vh] bg-[75%_55%] md:bg-cover bg-no-repeat flex flex-col" >
       <!-- Dark overlay -->
       <div class="absolute inset-0"></div>
 
       <!-- Content -->
       <div class="relative z-10 flex-1 flex items-center px-6">
-        <div class="max-w-7xl mx-auto w-full">
-          <h1 class="text-5xl font-bold text-brand-text leading-tight mb-4">
-            {{ $t('landing.hero.title') }}
-          </h1>
-          <h2 class="text-xl font-bold text-brand-text/90 mb-4">
-            {{ $t('landing.hero.subtitle') }}
-          </h2>
-          <p class="text-sm text-brand-text/70 leading-relaxed mb-8 max-w-sm">
-            {{ $t('landing.hero.description') }}
-          </p>
-          <div class="flex items-center gap-3">
-            <a href="#contact" class="px-5 py-2.5 bg-brand-red text-white text-sm font-medium rounded hover:bg-red-700 transition-colors">
-              {{ $t('landing.hero.ctaPrimary') }}
-            </a>
-            <a href="#services" class="px-5 py-2.5 border border-white/60 bg-gray-600 text-white text-sm font-medium rounded hover:bg-gray-300 transition-colors">
-              {{ $t('landing.hero.ctaSecondary') }}
-            </a>
+        <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
+          <div>
+            <h1 class="text-5xl font-bold text-brand-text leading-tight mb-4">
+              {{ $t('landing.hero.title') }}
+            </h1>
+            <h2 class="text-xl font-bold text-brand-text/90 mb-4">
+              {{ $t('landing.hero.subtitle') }}
+            </h2>
+            <p class="text-sm text-brand-text/70 leading-relaxed mb-8 max-w-sm">
+              {{ $t('landing.hero.description') }}
+            </p>
+            <div class="flex items-center gap-3">
+              <button class="bg-brand-green transition delay-150 duration-300 ease-in-out hover:scale-110 hover:bg-[#AFFF6F] hover:text-brand-text text-white text-sm font-medium rounded px-5 py-2.5">
+                {{ $t('landing.hero.ctaPrimary') }}
+              </button>
+              <button class="bg-gray-600 transition delay-150 duration-300 ease-in-out hover:scale-110 hover:bg-gray-300 hover:text-brand-text text-white text-sm font-medium rounded px-5 py-2.5">
+                {{ $t('landing.hero.ctaSecondary') }}
+              </button>
+            </div>
+          </div>
+          <div class="hidden md:absolute md:block bottom-0 right-24 h-[60vh] flex-shrink-0 overflow-hidden">
+            <img :src="choijinImage" alt="" class="h-full w-auto object-bottom" />
           </div>
         </div>
       </div>
@@ -62,10 +67,11 @@
       <div class="relative z-10 max-w-7xl mx-auto w-full px-6 pb-0">
         <!-- Checklist card pinned just above the right of the stats strip -->
         <div class="absolute bottom-full right-6 mb-3 w-72">
-          <div class="bg-white border border-gray-200 shadow-lg rounded p-4">
+          <div class="bg-white border border-[#C10007] shadow-lg rounded p-4">
             <div class="flex items-center justify-between mb-2">
               <span class="font-bold text-brand-text text-sm">{{ $t('landing.hero.checklist.title') }}</span>
               <span class="text-xs text-brand-red font-medium">{{ $t('landing.hero.checklist.badge') }}</span>
+              <DotLottieVue v-if="taiCheUrl" :src="taiCheUrl" autoplay loop class="w-10 h-10 flex-shrink-0" />
             </div>
             <ul class="space-y-2">
               <li class="flex items-start gap-2 text-xs text-gray-700">
@@ -325,6 +331,15 @@
 
 <script setup lang="ts">
 import heroImage from '~/assets/images/Hero5.png'
+import choijinImage from '~/assets/images/heroRightImage/choijin_my.svg?url'
+import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
+import taiCheData from '~/assets/images/lottiefiles/tai-che.json'
+
+const taiCheUrl = ref('')
+onMounted(() => {
+  const blob = new Blob([JSON.stringify(taiCheData)], { type: 'application/json' })
+  taiCheUrl.value = URL.createObjectURL(blob)
+})
 
 const { t } = useI18n()
 
