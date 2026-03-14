@@ -3,12 +3,12 @@
 
     <!-- Navbar -->
     <header class="w-full border-b border-gray-200 fixed top-0 z-50" style="background-color: #EEEFF1;">
-      <div class="mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         <!-- Logo -->
-        <a href="/" class="flex items-center ml-6">
+        <a href="/" class="flex items-center ml-2 md:ml-6">
           <img src="~/assets/images/logo/logo_horizontal.png" alt="Gal Impex" style="height: 3.5rem; width: auto; display: block;" />
         </a>
-        <!-- Nav links -->
+        <!-- Nav links (desktop) -->
         <nav class="hidden md:flex items-center gap-8">
           <a href="#about" class="text-sm text-gray-600 hover:text-brand-text transition-colors">{{ $t('landing.nav.about') }}</a>
           <a href="#services" class="text-sm text-gray-600 hover:text-brand-text transition-colors">{{ $t('landing.nav.services') }}</a>
@@ -17,18 +17,35 @@
           <a href="#projects" class="text-sm text-gray-600 hover:text-brand-text transition-colors">{{ $t('landing.nav.projects') }}</a>
           <a href="#contact" class="text-sm text-gray-600 hover:text-brand-text transition-colors">{{ $t('landing.nav.contact') }}</a>
         </nav>
-        <!-- CTA buttons -->
-        <div class="flex items-center gap-2">
-          <a href="#contact" class="px-4 py-2 bg-brand-red text-white text-sm font-medium rounded hover:bg-red-700 transition-colors">
+        <!-- CTA buttons + language + hamburger -->
+        <div class="flex items-center gap-1 md:gap-2">
+          <a href="#contact" class="px-3 md:px-4 py-2 bg-brand-red text-white text-xs md:text-sm font-medium rounded hover:bg-red-700 transition-colors">
             {{ $t('landing.nav.getQuote') }}
           </a>
-          <a href="#packages" class="px-4 py-2 bg-brand-yellow text-white text-brand-text text-sm font-medium rounded hover:opacity-90 transition-colors mr-6">
+          <a href="#packages" class="hidden sm:inline-block px-3 md:px-4 py-2 bg-brand-yellow text-white text-brand-text text-xs md:text-sm font-medium rounded hover:opacity-90 transition-colors mr-0 md:mr-6">
             {{ $t('landing.nav.subscription') }}
           </a>
           <LanguageBar />
+          <!-- Hamburger (mobile only) -->
+          <button class="md:hidden p-2 ml-1" @click="mobileMenuOpen = !mobileMenuOpen">
+            <Icon :name="mobileMenuOpen ? 'heroicons:x-mark' : 'heroicons:bars-3'" class="w-6 h-6 text-brand-text" />
+          </button>
         </div>
       </div>
     </header>
+
+    <!-- Mobile nav dropdown -->
+    <div v-if="mobileMenuOpen" class="md:hidden fixed top-20 left-0 w-full z-40 border-b border-gray-200 py-4 px-6 flex flex-col gap-4" style="background-color: #EEEFF1;">
+      <a href="#about" class="text-sm text-gray-600 hover:text-brand-text transition-colors" @click="mobileMenuOpen = false">{{ $t('landing.nav.about') }}</a>
+      <a href="#services" class="text-sm text-gray-600 hover:text-brand-text transition-colors" @click="mobileMenuOpen = false">{{ $t('landing.nav.services') }}</a>
+      <a href="#packages" class="text-sm text-gray-600 hover:text-brand-text transition-colors" @click="mobileMenuOpen = false">{{ $t('landing.nav.packages') }}</a>
+      <a href="#compliance" class="text-sm text-gray-600 hover:text-brand-text transition-colors" @click="mobileMenuOpen = false">{{ $t('landing.nav.compliance') }}</a>
+      <a href="#projects" class="text-sm text-gray-600 hover:text-brand-text transition-colors" @click="mobileMenuOpen = false">{{ $t('landing.nav.projects') }}</a>
+      <a href="#contact" class="text-sm text-gray-600 hover:text-brand-text transition-colors" @click="mobileMenuOpen = false">{{ $t('landing.nav.contact') }}</a>
+      <a href="#packages" class="sm:hidden inline-block px-4 py-2 bg-brand-yellow text-brand-text text-sm font-medium rounded hover:opacity-90 transition-colors w-fit" @click="mobileMenuOpen = false">
+        {{ $t('landing.nav.subscription') }}
+      </a>
+    </div>
 
     <!-- Hero Section -->
     <section class="relative md:h-[90vh] h-[60vh] bg-[75%_55%] md:bg-cover bg-no-repeat flex flex-col" >
@@ -36,13 +53,13 @@
       <div class="absolute inset-0"></div>
 
       <!-- Content -->
-      <div class="relative z-10 flex-1 flex items-center px-6">
+      <div class="relative z-10 flex-1 flex items-center px-4 md:px-6">
         <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
-          <div>
-            <h1 class="text-5xl font-bold text-brand-text leading-tight mb-4">
+          <div class="max-w-lg md:max-w-none">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-text leading-tight mb-4">
               {{ $t('landing.hero.title') }}
             </h1>
-            <h2 class="text-xl font-bold text-brand-text/90 mb-4">
+            <h2 class="text-lg md:text-xl font-bold text-brand-text/90 mb-4">
               {{ $t('landing.hero.subtitle') }}
             </h2>
             <p class="text-sm text-brand-text/70 leading-relaxed mb-8 max-w-sm">
@@ -57,16 +74,16 @@
               </button>
             </div>
           </div>
-          <div class="hidden md:absolute md:block bottom-0 right-0 h-[60vh] flex-shrink-0 overflow-hidden">
+          <div class="absolute block bottom-0 right-0 h-[35vh] md:h-[60vh] flex-shrink-0 overflow-hidden">
             <img :src="choijinImage" alt="" class="h-full w-auto object-bottom" />
           </div>
         </div>
       </div>
 
       <!-- Stats strip pinned to bottom, with checklist card floating above its right -->
-      <div class="relative z-10 max-w-7xl mx-auto w-full px-6 pb-0">
+      <div class="relative z-10 max-w-7xl mx-auto w-full px-4 md:px-6 pb-0">
         <!-- Checklist card pinned just above the right of the stats strip -->
-        <div class="absolute bottom-full right-6 mb-3 w-72">
+        <div class="hidden sm:block absolute bottom-full right-4 md:right-6 mb-3 w-[calc(100vw-2rem)] sm:w-72">
           <div class="bg-white border border-[#C10007] shadow-lg rounded p-4">
             <div class="flex items-center justify-between mb-2">
               <span class="font-bold text-brand-text text-sm">{{ $t('landing.hero.checklist.title') }}</span>
@@ -97,22 +114,22 @@
             </ul>
           </div>
         </div>
-        <div class="border border-white/20 rounded-t grid grid-cols-3 divide-x divide-white/20 bg-black/40 backdrop-blur-sm" style="background-color: #EEEFF1;">
-          <div class="flex items-center gap-3 px-8 py-5" style="border-left: 5px solid #C10007; border-right: 3px solid #fff;">
+        <div class="border border-white/20 rounded-t grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 divide-x-0 sm:divide-x divide-white/20 bg-black/40 backdrop-blur-sm" style="background-color: #EEEFF1;">
+          <div class="flex items-center gap-3 px-4 md:px-8 py-3 md:py-5" style="border-left: 5px solid #C10007; border-right: 3px solid #fff;">
             <span class="w-2.5 h-2.5 rounded-full bg-brand-red flex-shrink-0"></span>
             <div>
               <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.fast') }}</div>
               <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.response') }}</div>
             </div>
           </div>
-          <div class="flex items-center gap-3 px-8 py-5" style="border-left: 5px solid #3C7A48; border-right: 3px solid #fff;">
+          <div class="flex items-center gap-3 px-4 md:px-8 py-3 md:py-5" style="border-left: 5px solid #3C7A48; border-right: 3px solid #fff;">
             <span class="w-2.5 h-2.5 rounded-full bg-brand-green flex-shrink-0"></span>
             <div>
               <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.standard') }}</div>
               <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.compliance') }}</div>
             </div>
           </div>
-          <div class="flex items-center gap-3 px-8 py-5" style="border-left: 5px solid #E9A800;">
+          <div class="flex items-center gap-3 px-4 md:px-8 py-3 md:py-5" style="border-left: 5px solid #E9A800;">
             <span class="w-2.5 h-2.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
             <div>
               <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.endToEnd') }}</div>
@@ -124,10 +141,10 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="max-w-7xl mx-auto px-6 py-16">
-      <h2 class="text-3xl font-bold text-brand-text mb-2">{{ $t('landing.services.title') }}</h2>
+    <section id="services" class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-2">{{ $t('landing.services.title') }}</h2>
       <p class="text-sm text-gray-500 mb-8">{{ $t('landing.services.description') }}</p>
-      <div class="grid grid-cols-5 gap-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
         <div v-for="service in services" :key="service.key" class="border border-gray-200 rounded overflow-hidden">
           <img :src="service.image" :alt="service.title" class="w-full h-32 object-cover" />
           <div class="p-3">
@@ -140,9 +157,9 @@
     </section>
 
     <!-- Subscription Packages -->
-    <section id="packages" class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-100">
-      <h2 class="text-3xl font-bold text-brand-text mb-8">{{ $t('landing.packages.title') }}</h2>
-      <div class="grid grid-cols-3 gap-6">
+    <section id="packages" class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16 border-t border-gray-100">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-8">{{ $t('landing.packages.title') }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Basic -->
         <div class="border border-gray-200 rounded p-6">
           <div class="font-bold text-brand-text text-lg mb-1">{{ $t('landing.packages.basic.title') }}</div>
@@ -197,9 +214,9 @@
     </section>
 
     <!-- Compliance & Quality -->
-    <section id="compliance" class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-100">
-      <h2 class="text-3xl font-bold text-brand-text mb-8">{{ $t('landing.compliance.title') }}</h2>
-      <div class="grid grid-cols-3 gap-6">
+    <section id="compliance" class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16 border-t border-gray-100">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-8">{{ $t('landing.compliance.title') }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div v-for="card in complianceCards" :key="card.title" class="border border-gray-200 rounded p-6">
           <div class="font-semibold text-brand-text mb-2">{{ card.title }}</div>
           <p class="text-sm text-gray-500 leading-relaxed">{{ card.description }}</p>
@@ -208,10 +225,10 @@
     </section>
 
     <!-- Trust / Certifications -->
-    <section class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-100">
-      <h2 class="text-3xl font-bold text-brand-text mb-2">{{ $t('landing.trust.title') }}</h2>
+    <section class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16 border-t border-gray-100">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-2">{{ $t('landing.trust.title') }}</h2>
       <p class="text-sm text-gray-500 mb-8">{{ $t('landing.trust.description') }}</p>
-      <div class="flex items-center gap-10">
+      <div class="flex flex-wrap items-center gap-4 md:gap-10">
         <div v-for="cert in certifications" :key="cert" class="flex items-center justify-center border border-gray-200 rounded px-6 py-4 text-sm font-bold text-gray-700 min-w-[90px]">
           {{ cert }}
         </div>
@@ -219,9 +236,9 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-100">
-      <h2 class="text-3xl font-bold text-brand-text mb-8">{{ $t('landing.contact.title') }}</h2>
-      <div class="grid grid-cols-2 gap-16">
+    <section id="contact" class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16 border-t border-gray-100">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-8">{{ $t('landing.contact.title') }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <!-- Contact info -->
         <div class="space-y-4">
           <div class="flex items-start gap-3 text-sm text-gray-700">
@@ -240,7 +257,7 @@
 
         <!-- Contact form -->
         <div class="space-y-3">
-          <div class="grid grid-cols-2 gap-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
               type="text"
               :placeholder="$t('landing.contact.namePlaceholder')"
@@ -252,7 +269,7 @@
               class="w-full border border-gray-200 rounded px-4 py-2.5 text-sm text-brand-text placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
             />
           </div>
-          <div class="grid grid-cols-2 gap-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
               type="tel"
               :placeholder="$t('landing.contact.phonePlaceholder')"
@@ -278,8 +295,8 @@
 
     <!-- Footer -->
     <footer class="border-t border-gray-200 py-12" style="background-color: #EEEFF1;">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-5 gap-8 mb-10">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 mb-10">
           <!-- Brand -->
           <div class="col-span-2">
             <div class="flex items-center gap-3 mb-3">
@@ -334,12 +351,13 @@
 </template>
 
 <script setup lang="ts">
-import heroImage from '~/assets/images/Hero5.png'
 import choijinImage from '~/assets/images/heroRightImage/choijin_my.svg?url'
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
 import taiCheData from '~/assets/images/lottiefiles/tai-che.json'
 
 const taiCheUrl = ref('')
+const mobileMenuOpen = ref(false)
+
 onMounted(() => {
   const blob = new Blob([JSON.stringify(taiCheData)], { type: 'application/json' })
   taiCheUrl.value = URL.createObjectURL(blob)
