@@ -48,13 +48,18 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative md:h-[90vh] h-[60vh] bg-[75%_55%] md:bg-cover bg-no-repeat flex flex-col" >
+    <section class="relative md:h-[90vh] min-h-[80vh] pt-20 bg-[75%_55%] md:bg-cover bg-no-repeat flex flex-col" >
       <!-- Dark overlay -->
       <div class="absolute inset-0"></div>
 
+      <!-- Building image pinned to bottom-right of section -->
+      <div class="absolute bottom-0 right-0 h-[40vh] md:h-[60vh] flex-shrink-0 overflow-hidden z-0">
+        <img :src="choijinImage" alt="" class="h-full w-auto object-bottom" />
+      </div>
+
       <!-- Content -->
       <div class="relative z-10 flex-1 flex items-center px-4 md:px-6">
-        <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
+        <div class="max-w-7xl mx-auto w-full">
           <div class="max-w-lg md:max-w-none">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-text leading-tight mb-4">
               {{ $t('landing.hero.title') }}
@@ -73,9 +78,6 @@
                 {{ $t('landing.hero.ctaSecondary') }}
               </button>
             </div>
-          </div>
-          <div class="absolute block bottom-0 right-0 h-[35vh] md:h-[60vh] flex-shrink-0 overflow-hidden">
-            <img :src="choijinImage" alt="" class="h-full w-auto object-bottom" />
           </div>
         </div>
       </div>
