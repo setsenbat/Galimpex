@@ -22,7 +22,8 @@
         "extinguisher": "Extinguisher inspection + refill log",
         "alarm": "Alarm / detection system maintenance",
         "evacuation": "Evacuation signage + emergency lighting",
-        "training": "Staff training + drill support"
+        "training": "Staff training + drill support",
+        "recycling": "Recycling and eco-friendly disposal of expired utilities"
       },
       "stats": {
         "fast": "Fast",

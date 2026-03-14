@@ -22,7 +22,8 @@
         "extinguisher": "灭火器检查 + 充装记录",
         "alarm": "报警/探测系统维护",
         "evacuation": "疏散标志 + 应急照明",
-        "training": "员工培训 + 演练支持"
+        "training": "员工培训 + 演练支持",
+        "recycling": "过期设备的回收与环保处置"
       },
       "stats": {
         "fast": "快速",

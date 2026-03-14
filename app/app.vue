@@ -90,6 +90,10 @@
                 <Icon name="heroicons:check" class="w-3.5 h-3.5 text-brand-red mt-0.5 flex-shrink-0" />
                 {{ $t('landing.hero.checklist.training') }}
               </li>
+              <li class="flex items-start gap-2 text-xs text-gray-700">
+                <Icon name="heroicons:check" class="w-3.5 h-3.5 text-brand-red mt-0.5 flex-shrink-0" />
+                {{ $t('landing.hero.checklist.recycling') }}
+              </li>
             </ul>
           </div>
         </div>
