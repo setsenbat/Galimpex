@@ -57,7 +57,7 @@
               </button>
             </div>
           </div>
-          <div class="hidden md:absolute md:block bottom-0 right-24 h-[60vh] flex-shrink-0 overflow-hidden">
+          <div class="hidden md:absolute md:block bottom-0 right-0 h-[60vh] flex-shrink-0 overflow-hidden">
             <img :src="choijinImage" alt="" class="h-full w-auto object-bottom" />
           </div>
         </div>
