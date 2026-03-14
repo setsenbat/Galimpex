@@ -71,7 +71,29 @@
             </ul>
           </div>
         </div>
-        
+        <div class="w-full sm:w-[70%] mx-auto border border-white/20 rounded-t grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 divide-x-0 sm:divide-x divide-white/20 bg-black/40 backdrop-blur-sm" style="background-color: #EEEFF1;">
+          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #C10007; border-right: 3px solid #fff;">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-red flex-shrink-0"></span>
+            <div>
+              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.fast') }}</div>
+              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.response') }}</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #3C7A48; border-right: 3px solid #fff;">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-green flex-shrink-0"></span>
+            <div>
+              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.standard') }}</div>
+              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.compliance') }}</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #E9A800;">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+            <div>
+              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.endToEnd') }}</div>
+              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.service') }}</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -146,29 +168,6 @@
           </ul>
         </div>
       </div>
-      <div class="mt-30 border border-white/20 rounded-t grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 divide-x-0 sm:divide-x divide-white/20 bg-black/40 backdrop-blur-sm" style="background-color: #EEEFF1;">
-          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #C10007; border-right: 3px solid #fff;">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand-red flex-shrink-0"></span>
-            <div>
-              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.fast') }}</div>
-              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.response') }}</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #3C7A48; border-right: 3px solid #fff;">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand-green flex-shrink-0"></span>
-            <div>
-              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.standard') }}</div>
-              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.compliance') }}</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #E9A800;">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
-            <div>
-              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.endToEnd') }}</div>
-              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.service') }}</div>
-            </div>
-          </div>
-        </div>
     </section>
 
     <!-- Compliance & Quality -->
