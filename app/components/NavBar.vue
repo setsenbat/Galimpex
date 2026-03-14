@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Navbar -->
-    <header class="w-full border-b border-gray-200 fixed top-0 z-50" style="background-color: #EEEFF1;">
+    <header class="w-full fixed top-0 z-50 bg-white" >
       <div class="mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         <!-- Logo -->
         <a href="/" class="flex items-center ml-2 md:ml-6">

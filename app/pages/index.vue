@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative md:h-[90vh] min-h-[80vh] pt-20 bg-cover bg-center bg-no-repeat flex flex-col" :style="{ backgroundImage: `url(${heroBg})` }">
+    <section class="relative md:h-[90vh] min-h-[80vh] pt-20 bg-cover bg-[right_80%] bg-no-repeat flex flex-col" :style="{ backgroundImage: `url(${heroBg})` }">
       <!-- Dark overlay -->
       <div class="absolute inset-0"></div>
 
@@ -71,29 +71,7 @@
             </ul>
           </div>
         </div>
-        <div class="border border-white/20 rounded-t grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 divide-x-0 sm:divide-x divide-white/20 bg-black/40 backdrop-blur-sm" style="background-color: #EEEFF1;">
-          <div class="flex items-center gap-3 px-4 md:px-8 py-3 md:py-5" style="border-left: 5px solid #C10007; border-right: 3px solid #fff;">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand-red flex-shrink-0"></span>
-            <div>
-              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.fast') }}</div>
-              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.response') }}</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 px-4 md:px-8 py-3 md:py-5" style="border-left: 5px solid #3C7A48; border-right: 3px solid #fff;">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand-green flex-shrink-0"></span>
-            <div>
-              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.standard') }}</div>
-              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.compliance') }}</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 px-4 md:px-8 py-3 md:py-5" style="border-left: 5px solid #E9A800;">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
-            <div>
-              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.endToEnd') }}</div>
-              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.service') }}</div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
 
@@ -168,6 +146,29 @@
           </ul>
         </div>
       </div>
+      <div class="mt-30 border border-white/20 rounded-t grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 divide-x-0 sm:divide-x divide-white/20 bg-black/40 backdrop-blur-sm" style="background-color: #EEEFF1;">
+          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #C10007; border-right: 3px solid #fff;">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-red flex-shrink-0"></span>
+            <div>
+              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.fast') }}</div>
+              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.response') }}</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #3C7A48; border-right: 3px solid #fff;">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-green flex-shrink-0"></span>
+            <div>
+              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.standard') }}</div>
+              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.compliance') }}</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 px-4 md:px-8 py-1.5 md:py-3" style="border-left: 5px solid #E9A800;">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+            <div>
+              <div class="font-bold text-brand-text text-sm">{{ $t('landing.hero.stats.endToEnd') }}</div>
+              <div class="text-xs text-brand-text/60">{{ $t('landing.hero.stats.service') }}</div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <!-- Compliance & Quality -->
@@ -186,8 +187,9 @@
       <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-2">{{ $t('landing.trust.title') }}</h2>
       <p class="text-sm text-gray-500 mb-8">{{ $t('landing.trust.description') }}</p>
       <div class="flex flex-wrap items-center gap-4 md:gap-10">
-        <div v-for="cert in certifications" :key="cert" class="flex items-center justify-center border border-gray-200 rounded px-6 py-4 text-sm font-bold text-gray-700 min-w-[90px]">
-          {{ cert }}
+        <div v-for="cert in certifications" :key="cert.label" class="flex items-center gap-2 border border-gray-200 rounded px-6 py-4 text-sm font-bold text-gray-700 min-w-[90px]">
+          <Icon :name="cert.icon" class="w-4 h-4 text-brand-red flex-shrink-0" />
+          {{ cert.label }}
         </div>
       </div>
     </section>
@@ -254,7 +256,7 @@
 </template>
 
 <script setup lang="ts">
-import choijinImage from '~/assets/images/heroRightImage/choijin_my.svg?url'
+// import choijinImage from '~/assets/images/heroRightImage/choijin_my.svg?url'
 import heroBg from '~/assets/images/hero3.png?url'
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
 import taiCheData from '~/assets/images/lottiefiles/tai-che.json'
@@ -302,5 +304,10 @@ const complianceCards = computed(() => [
   { title: t('landing.compliance.culture.title'), description: t('landing.compliance.culture.description') },
 ])
 
-const certifications = ['ISO 9001', 'MNS', 'NFPA', 'CE']
+const certifications = [
+  { label: 'ISO 9001', icon: 'heroicons:shield-check' },
+  { label: 'MNS',      icon: 'heroicons:document-check' },
+  { label: 'NFPA',     icon: 'heroicons:fire' },
+  { label: 'CE',       icon: 'heroicons:check-badge' },
+]
 </script>
