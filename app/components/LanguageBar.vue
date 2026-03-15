@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const switchLocalePath = useSwitchLocalePath()
 const { locale, setLocale } = useI18n()
 
 const isOpen = ref(false)
@@ -39,6 +40,7 @@ const changeLanguage = async (langCode: string) => {
     icon: getFlagIcon(langCode)
   }
   isOpen.value = false
+  navigateTo(switchLocalePath(langCode as LangCode) ?? '/')
 }
 </script>
 
