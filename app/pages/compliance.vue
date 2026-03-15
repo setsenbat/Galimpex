@@ -45,11 +45,18 @@
         <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-2 text-center">{{ $t('compliancePage.standards.title') }}</h2>
         <p class="text-sm text-gray-500 text-center mb-8 max-w-xl mx-auto">{{ $t('compliancePage.standards.description') }}</p>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div v-for="std in standards" :key="std.titleKey" class="bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-sm transition-shadow">
-            <div class="text-2xl font-bold text-brand-red mb-1">{{ $t(std.titleKey) }}</div>
-            <div class="text-sm text-gray-500">{{ $t(std.labelKey) }}</div>
+          <div class="bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-sm transition-shadow">
+            <img src="~/assets/images/projectImages/mns_logo.png" alt="MNS" class="h-10 mx-auto mb-3 object-contain" />
+            <div class="text-sm text-gray-500">{{ $t('compliancePage.standards.mnsLabel') }}</div>
           </div>
-          <!-- FM Approved -->
+          <div class="bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-sm transition-shadow">
+            <img src="~/assets/images/webImages/Nfpa-Logo-Vector.svg-.png" alt="NFPA" class="h-10 mx-auto mb-3 object-contain" />
+            <div class="text-sm text-gray-500">{{ $t('compliancePage.standards.nfpaLabel') }}</div>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-sm transition-shadow">
+            <img src="~/assets/images/webImages/iso-9001-2015.png" alt="ISO 9001" class="h-10 mx-auto mb-3 object-contain" />
+            <div class="text-sm text-gray-500">{{ $t('compliancePage.standards.isoLabel') }}</div>
+          </div>
           <div class="bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-sm transition-shadow">
             <img src="~/assets/images/distributorLogo/fm.png" alt="FM Approved" class="h-10 mx-auto mb-3 object-contain" />
             <div class="text-sm text-gray-500">{{ $t('compliancePage.standards.fmLabel') }}</div>
@@ -153,11 +160,6 @@ const whyItems = [
   'compliancePage.why.readiness'
 ]
 
-const standards = [
-  { titleKey: 'compliancePage.standards.mns', labelKey: 'compliancePage.standards.mnsLabel' },
-  { titleKey: 'compliancePage.standards.nfpa', labelKey: 'compliancePage.standards.nfpaLabel' },
-  { titleKey: 'compliancePage.standards.iso', labelKey: 'compliancePage.standards.isoLabel' }
-]
 
 const complianceServices = [
   { icon: 'heroicons:magnifying-glass', key: 'compliancePage.services.inspection' },
