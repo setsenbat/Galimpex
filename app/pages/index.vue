@@ -107,7 +107,7 @@
           <div class="p-3">
             <div class="font-semibold text-brand-text text-sm mb-1">{{ service.title }}</div>
             <p class="text-xs text-gray-500 leading-relaxed">{{ service.description }}</p>
-            <a href="#contact" class="inline-block mt-2 text-xs text-brand-red font-medium hover:underline">{{ $t('landing.services.learnMore') }}</a>
+            <a :href="`/services#service-${service.key}`" class="inline-block mt-2 text-xs text-brand-red font-medium hover:underline">{{ $t('landing.services.learnMore') }}</a>
           </div>
         </div>
       </div>
@@ -185,10 +185,53 @@
     <section class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16 border-t border-gray-100">
       <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-2">{{ $t('landing.trust.title') }}</h2>
       <p class="text-sm text-gray-500 mb-8">{{ $t('landing.trust.description') }}</p>
-      <div class="flex flex-wrap items-center gap-4 md:gap-10">
-        <div v-for="cert in certifications" :key="cert.label" class="flex items-center gap-2 border border-gray-200 rounded px-6 py-4 text-sm font-bold text-gray-700 min-w-[90px]">
-          <Icon :name="cert.icon" class="w-4 h-4 text-brand-red flex-shrink-0" />
-          {{ cert.label }}
+      <div class="flex flex-wrap items-center gap-4 md:gap-6">
+        <div class="flex flex-col items-center gap-2 border border-gray-200 rounded p-4 min-w-[90px] text-center">
+          <img src="~/assets/images/webImages/iso-9001-2015.png" alt="ISO 9001" class="h-10 object-contain" />
+          <span class="text-xs font-bold text-gray-700">ISO 9001</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 border border-gray-200 rounded p-4 min-w-[90px] text-center">
+          <img src="~/assets/images/projectImages/mns_logo.png" alt="MNS" class="h-10 object-contain" />
+          <span class="text-xs font-bold text-gray-700">MNS</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 border border-gray-200 rounded p-4 min-w-[90px] text-center">
+          <img src="~/assets/images/webImages/Nfpa-Logo-Vector.svg-.png" alt="NFPA" class="h-10 object-contain" />
+          <span class="text-xs font-bold text-gray-700">NFPA</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 border border-gray-200 rounded p-4 min-w-[90px] text-center">
+          <img src="~/assets/images/webImages/CE.png" alt="CE" class="h-10 object-contain" />
+          <span class="text-xs font-bold text-gray-700">CE</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 border border-gray-200 rounded p-4 min-w-[90px] text-center">
+          <img src="~/assets/images/webImages/UL.png" alt="UL Listed" class="h-10 object-contain" />
+          <span class="text-xs font-bold text-gray-700">UL Listed</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="border-t border-gray-100 bg-gray-50 py-10 md:py-14 px-4 md:px-6">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-lg font-semibold text-brand-text mb-6 text-center">{{ $t('landing.partners.title') }}</h2>
+        <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+          <div class="bg-white border border-gray-100 rounded p-3 flex items-center justify-center h-16 w-28">
+            <img src="~/assets/images/distributorLogo/mircom-vector-logo.png" alt="Mircom" class="max-h-8 max-w-[96px] object-contain" />
+          </div>
+          <div class="bg-white border border-gray-100 rounded p-3 flex items-center justify-center h-16 w-28">
+            <img src="~/assets/images/distributorLogo/asenware.png" alt="ASENWARE" class="max-h-8 max-w-[96px] object-contain" />
+          </div>
+          <div class="bg-white border border-gray-100 rounded p-3 flex items-center justify-center h-16 w-28">
+            <img src="~/assets/images/distributorLogo/bolid.png" alt="BOLID" class="max-h-8 max-w-[96px] object-contain" />
+          </div>
+          <div class="bg-white border border-gray-100 rounded p-3 flex items-center justify-center h-16 w-28">
+            <img src="~/assets/images/distributorLogo/Logo-MECH-20241.png" alt="MECH" class="max-h-8 max-w-[96px] object-contain" />
+          </div>
+          <div class="bg-white border border-gray-100 rounded p-3 flex items-center justify-center h-16 w-28">
+            <img src="~/assets/images/distributorLogo/viber_image_2026-01-07_12-43-51-405.png" alt="forede" class="max-h-8 max-w-[96px] object-contain" />
+          </div>
+          <div class="bg-white border border-gray-100 rounded p-3 flex items-center justify-center h-16 w-28">
+            <img src="~/assets/images/distributorLogo/fm.png" alt="FM Approved" class="max-h-8 max-w-[96px] object-contain" />
+          </div>
         </div>
       </div>
     </section>
@@ -257,6 +300,11 @@
 <script setup lang="ts">
 // import choijinImage from '~/assets/images/heroRightImage/choijin_my.svg?url'
 import heroBg from '~/assets/images/hero3.png?url'
+import imgSupply from '~/assets/images/webImages/iso 4kg.png?url'
+import imgInstall from '~/assets/images/webImages/fire-sprinklers-system-for-warehouses.jpg?url'
+import imgInspect from '~/assets/images/webImages/fire-extinguisher-refilling-work-1000x1000.jpeg?url'
+import imgDrills from '~/assets/images/webImages/mitchell-luo-wXs0mncHyfI-unsplash.jpg?url'
+import imgReport from '~/assets/images/webImages/image123.png?url'
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
 import taiCheData from '~/assets/images/lottiefiles/tai-che.json'
 
@@ -270,11 +318,11 @@ onMounted(() => {
 const { t } = useI18n()
 
 const services = computed(() => [
-  { key: 'supply', title: t('landing.services.supply.title'), description: t('landing.services.supply.description'), image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-  { key: 'installation', title: t('landing.services.installation.title'), description: t('landing.services.installation.description'), image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&q=80' },
-  { key: 'inspection', title: t('landing.services.inspection.title'), description: t('landing.services.inspection.description'), image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80' },
-  { key: 'drills', title: t('landing.services.drills.title'), description: t('landing.services.drills.description'), image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=80' },
-  { key: 'reporting', title: t('landing.services.reporting.title'), description: t('landing.services.reporting.description'), image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&q=80' },
+  { key: 'supply', title: t('landing.services.supply.title'), description: t('landing.services.supply.description'), image: imgSupply },
+  { key: 'installation', title: t('landing.services.installation.title'), description: t('landing.services.installation.description'), image: imgInstall },
+  { key: 'inspection', title: t('landing.services.inspection.title'), description: t('landing.services.inspection.description'), image: imgInspect },
+  { key: 'drills', title: t('landing.services.drills.title'), description: t('landing.services.drills.description'), image: imgDrills },
+  { key: 'reporting', title: t('landing.services.reporting.title'), description: t('landing.services.reporting.description'), image: imgReport },
 ])
 
 const basicFeatures = computed(() => [
@@ -303,10 +351,5 @@ const complianceCards = computed(() => [
   { title: t('landing.compliance.culture.title'), description: t('landing.compliance.culture.description') },
 ])
 
-const certifications = [
-  { label: 'ISO 9001', icon: 'heroicons:shield-check' },
-  { label: 'MNS',      icon: 'heroicons:document-check' },
-  { label: 'NFPA',     icon: 'heroicons:fire' },
-  { label: 'CE',       icon: 'heroicons:check-badge' },
-]
+
 </script>
