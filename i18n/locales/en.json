@@ -1,7 +1,7 @@
 {
   "landing": {
     "nav": {
-      "about": "About",
+      "about": "About Us",
       "services": "Services",
       "packages": "Packages",
       "compliance": "Compliance",
@@ -13,24 +13,24 @@
     "hero": {
       "title": "Fire safety you can prove.",
       "subtitle": "Your trusted partner",
-      "description": "Gal Impex helps buildings, offices and industrial sites stay compliant with reliable fire equipment, installation and inspection programs.",
-      "ctaPrimary": "Request site survey",
-      "ctaSecondary": "Explore services",
+      "description": "Gal Impex helps buildings, offices and industrial sites stay compliant with reliable fire equipment, system design & installation, and inspection programs.",
+      "ctaPrimary": "Request Site Survey",
+      "ctaSecondary": "Explore Services",
       "checklist": {
-        "title": "Quick checklist",
+        "title": "Quick Checklist",
         "badge": "Recommended",
-        "extinguisher": "Extinguisher inspection + refill log",
-        "alarm": "Alarm / detection system maintenance",
-        "evacuation": "Evacuation signage + emergency lighting",
-        "training": "Staff training + drill support",
+        "extinguisher": "Extinguisher inspection",
+        "alarm": "Alarm maintenance",
+        "evacuation": "Emergency lighting",
+        "training": "Staff training",
         "recycling": "Recycling and eco-friendly disposal of expired utilities"
       },
       "stats": {
-        "fast": "Fast",
+        "fast": "Fast response",
         "response": "Response",
-        "standard": "MNS / NFPA",
+        "standard": "MNS / NFPA compliance",
         "compliance": "Compliance",
-        "endToEnd": "End-to-end",
+        "endToEnd": "End-to-end service",
         "service": "Service"
       }
     },
@@ -40,31 +40,31 @@
       "learnMore": "Learn more →",
       "supply": {
         "title": "Equipment Supply",
-        "description": "Fire extinguishers, cabinets, hoses and essential fire safety equipment supplied to meet building safety requirements."
+        "description": "Reliable supply of certified fire extinguishers and fire safety equipment."
       },
       "installation": {
-        "title": "System Installation",
+        "title": "System Design & Installation",
         "description": "Design and installation of fire alarm and suppression systems tailored to the facility and compliance standards."
       },
       "inspection": {
-        "title": "Inspection & Refill",
-        "description": "Regular inspection, testing and extinguisher refill services to keep fire protection equipment operational."
+        "title": "Extinguisher Inspection & Refill",
+        "description": "Regular inspection and extinguisher refill services to keep fire protection equipment operational."
       },
       "drills": {
         "title": "Training & Drills",
         "description": "Fire safety training and evacuation drills to prepare staff for emergency response."
       },
       "reporting": {
-        "title": "Audit-ready Reporting",
+        "title": "Compliance Reporting",
         "description": "Clear service records, inspection logs and documentation prepared for regulatory inspections and audits."
       }
     },
     "packages": {
-      "title": "Subscription packages",
+      "title": "Service Packages",
       "from": "From",
       "mostPopular": "Most popular",
       "basic": {
-        "title": "Basic",
+        "title": "Standard",
         "price": "₮150,000",
         "subtitle": "For small offices",
         "annual": "Annual inspection",
@@ -72,7 +72,7 @@
         "support": "Phone support"
       },
       "standard": {
-        "title": "Standard",
+        "title": "Professional",
         "price": "₮350,000",
         "quarterly": "Quarterly inspection",
         "training": "Staff training",
@@ -126,19 +126,19 @@
       "description": "Fire Safety Engineering since 1971",
       "company": {
         "title": "Company",
-        "about": "About",
+        "about": "About Us",
         "projects": "Projects",
         "careers": "Careers"
       },
       "services": {
         "title": "Services",
         "supply": "Equipment Supply",
-        "installation": "System Installation",
-        "inspection": "Inspection & Refill",
+        "installation": "System Design & Installation",
+        "inspection": "Extinguisher Inspection & Refill",
         "training": "Training & Drills"
       },
       "compliance": {
-        "title": "Compliance",
+        "title": "Standards & Compliance",
         "standards": "Standards",
         "certifications": "Certifications"
       },
@@ -153,8 +153,8 @@
   "about": {
     "hero": {
       "title": "About Gal Impex",
-      "subtitle": "Mongolia's Pioneer in Fire Safety Engineering Since 1971",
-      "description": "For over five decades, Gal Impex has delivered reliable fire safety equipment, systems and engineering services to protect lives, property and operations.",
+      "subtitle": "Mongolia's Pioneer in Fire Safety Since 1971",
+      "description": "Fire Impex is a Mongolian company established in 1971, with a long-standing presence in the fire safety industry. Backed by decades of experience and a skilled professional team, we reliably deliver comprehensive fire safety services—including the supply of fire safety equipment, system solutions, installation, maintenance, and fire extinguisher refilling—for high-demand facilities such as mining, energy, data centers, industrial plants, warehouses, offices, shopping centers, hospitals, and schools.",
       "ctaPrimary": "View Services",
       "ctaSecondary": "Contact Us"
     },
@@ -222,7 +222,7 @@
   "compliancePage": {
     "hero": {
       "title": "Compliance & Safety Standards",
-      "description": "Helping facilities stay compliant with fire safety regulations through professional inspection, documentation and maintenance programs. Gal Impex supports organizations in meeting national safety requirements and maintaining inspection readiness.",
+      "description": "Helping facilities stay compliant with fire safety regulations through professional inspection, documentation and maintenance programs.",
       "button": "Request Compliance Review"
     },
     "why": {
@@ -288,7 +288,7 @@
     "hero": {
       "title": "Contact",
       "subtitle": "Get in touch with Gal Impex",
-      "description": "Our team is ready to support your fire safety equipment, system installation, inspection, and engineering needs.",
+      "description": "Our team is ready to support your fire safety equipment, system design & installation, inspection, and engineering needs.",
       "ctaPrimary": "Request a Quote",
       "ctaSecondary": "Call Sales"
     },
@@ -351,7 +351,7 @@
     "hero": {
       "title": "Services",
       "subtitle": "Fire Safety Engineering Solutions for Reliable and Compliant Facilities",
-      "description": "From equipment supply to system installation, inspection, and training — Gal Impex supports the full lifecycle of fire safety management.",
+      "description": "From equipment supply to system design & installation, inspection, and training — Gal Impex supports the full lifecycle of fire safety management.",
       "ctaPrimary": "Request a Quote",
       "ctaSecondary": "Contact an Engineer"
     },
@@ -366,7 +366,7 @@
         "cta": "Request equipment quote"
       },
       "installation": {
-        "title": "System Installation",
+        "title": "System Design & Installation",
         "description": "Engineering design and installation of fire alarm and suppression systems.",
         "bullet1": "Fire alarm systems",
         "bullet2": "Automatic suppression systems",
@@ -375,7 +375,7 @@
         "cta": "Request installation consultation"
       },
       "inspection": {
-        "title": "Inspection & Refill",
+        "title": "Extinguisher Inspection & Refill",
         "description": "Routine inspection and extinguisher refill services to keep equipment operational.",
         "bullet1": "Extinguisher inspection",
         "bullet2": "Extinguisher refill",
@@ -393,7 +393,7 @@
         "cta": "Book training"
       },
       "reporting": {
-        "title": "Audit-ready Reporting",
+        "title": "Compliance Reporting",
         "description": "Inspection logs and service records prepared for safety audits and regulatory inspections.",
         "bullet1": "Service reports",
         "bullet2": "Inspection logs",
@@ -415,7 +415,7 @@
       "title": "Why Gal Impex",
       "bullet1": "50+ years experience",
       "bullet2": "Certified systems and equipment",
-      "bullet3": "Professional engineers",
+      "bullet3": "Professional engineers and technicians",
       "bullet4": "Reliable service and maintenance"
     },
     "cta": {
@@ -431,12 +431,12 @@
   },
   "packagesPage": {
     "hero": {
-      "title": "Subscription Packages",
+      "title": "Service Packages",
       "description": "Predictable fire safety service for offices, buildings, and industrial facilities. Stay inspection-ready with scheduled maintenance, documentation, refill support, and compliance follow-up.",
-      "ctaPrimary": "Request a quote",
-      "ctaSecondary": "Talk to an engineer",
+      "ctaPrimary": "Request a Quote",
+      "ctaSecondary": "Talk to an Engineer",
       "trust1": "Scheduled service",
-      "trust2": "Audit-ready records",
+      "trust2": "Compliance-ready records",
       "trust3": "Faster response",
       "trust4": "Long-term cost control"
     },
@@ -447,7 +447,7 @@
         "feature2": "Extinguisher inspection / refill",
         "feature3": "Basic compliance checklist",
         "feature4": "Phone support",
-        "cta": "Choose Basic"
+        "cta": "Choose Standard"
       },
       "standard": {
         "target": "For commercial buildings and growing operations",
@@ -456,17 +456,17 @@
         "feature3": "Staff awareness training",
         "feature4": "Compliance checklist",
         "feature5": "Priority scheduling",
-        "cta": "Choose Standard"
+        "cta": "Choose Professional"
       },
       "premium": {
         "target": "For industrial, mining, and complex facilities",
         "feature1": "Monthly or planned inspection schedule",
         "feature2": "Full extinguisher + system maintenance",
-        "feature3": "Audit-ready service records",
+        "feature3": "Compliance-ready service records",
         "feature4": "Staff drill support",
         "feature5": "Dedicated account engineer",
         "feature6": "Priority response SLA",
-        "cta": "Talk to sales"
+        "cta": "Talk to Sales"
       }
     },
     "included": {
@@ -480,14 +480,14 @@
     "comparison": {
       "title": "Detailed Package Comparison",
       "feature": "Feature",
-      "basic": "Basic",
-      "standard": "Standard",
+      "basic": "Standard",
+      "standard": "Professional",
       "premium": "Premium",
       "inspection": "Scheduled inspection",
       "refill": "Extinguisher refill",
       "system": "Alarm / system inspection",
       "training": "Training",
-      "reports": "Audit-ready reports",
+      "reports": "Compliance-ready reports",
       "engineer": "Dedicated engineer",
       "priority": "Response priority",
       "annual": "Annual",
@@ -503,16 +503,16 @@
     },
     "whoFor": {
       "title": "Who Is This For?",
-      "basicTitle": "Basic",
+      "basicTitle": "Standard",
       "basicTarget": "Small offices, shops, clinics",
-      "standardTitle": "Standard",
-      "standardTarget": "Commercial buildings, schools, restaurants",
+      "standardTitle": "Professional",
+      "standardTarget": "Commercial buildings, offices, shopping and entertainment centers",
       "premiumTitle": "Premium",
       "premiumTarget": "Factories, warehouses, mining, large facilities"
     },
     "process": {
       "title": "How It Works",
-      "step1": "Site survey",
+      "step1": "Site Survey",
       "step2": "Package recommendation",
       "step3": "Service schedule setup",
       "step4": "Inspection / maintenance begins",
@@ -523,18 +523,18 @@
       "q1": "Can we upgrade later?",
       "a1": "Yes, you can upgrade your package at any time. Our team will adjust your service schedule and pricing accordingly.",
       "q2": "Is refill included?",
-      "a2": "Extinguisher refill is included in Standard and Premium packages, and available as an add-on for Basic.",
+      "a2": "Extinguisher refill is included in Professional and Premium packages, and available as an add-on for Standard.",
       "q3": "Do you support multi-site companies?",
       "a3": "Yes, we support organizations with multiple locations. Contact us for a customized multi-site package.",
       "q4": "Do you issue service records for audit?",
-      "a4": "Yes, all packages include service records. Standard and Premium packages include full audit-ready documentation.",
+      "a4": "Yes, all packages include service records. Professional and Premium packages include full compliance-ready documentation.",
       "q5": "Can packages be customized?",
       "a5": "Yes, all packages can be tailored to your facility's specific requirements. Contact our engineers for a custom quote."
     },
     "cta": {
       "title": "Not sure which package fits your facility?",
       "description": "Our engineer can recommend the right plan based on your building type and compliance needs.",
-      "ctaPrimary": "Request site survey",
+      "ctaPrimary": "Request Site Survey",
       "ctaSecondary": "Contact us"
     },
     "form": {
@@ -550,10 +550,10 @@
   },
   "projectsPage": {
     "hero": {
-      "label": "PROJECTS",
+      "label": "SELECTED FIRE SAFETY PROJECTS",
       "title": "Trusted by leading organizations across Mongolia",
-      "description": "From banking towers and power plants to hotels and wind farms — Gal Impex delivers reliable fire safety solutions across all industries.",
-      "ctaPrimary": "Request a Site Survey",
+      "description": "Over 50 years of experience delivering fire safety equipment, systems and services for industrial, commercial and public facilities.",
+      "ctaPrimary": "Request Project Consultation",
       "ctaSecondary": "View Services"
     },
     "stats": {
@@ -568,7 +568,7 @@
     },
     "filters": {
       "all": "All Projects",
-      "commercial": "Commercial",
+      "commercial": "Commercial & Office",
       "industrial": "Industrial",
       "energy": "Energy",
       "hospitality": "Hospitality",
@@ -576,7 +576,7 @@
       "resultsLabel": "projects"
     },
     "categories": {
-      "commercial": "Commercial",
+      "commercial": "Commercial & Office",
       "industrial": "Industrial",
       "energy": "Energy",
       "hospitality": "Hospitality",
@@ -651,7 +651,7 @@
     "cta": {
       "title": "Planning a new project?",
       "description": "Our engineers are ready to assess your facility and design the right fire safety solution.",
-      "button": "Request a Site Survey"
+      "button": "Request Project Consultation"
     }
   }
 }
