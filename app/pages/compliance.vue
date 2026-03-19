@@ -5,10 +5,8 @@
     <section class="relative pt-32 pb-20 px-4 md:px-6 bg-brand-text bg-cover bg-center" :style="{ backgroundImage: `url(${heroBg})` }">
       <div class="absolute inset-0 bg-black/70"></div>
       <div class="max-w-7xl mx-auto relative z-10">
-        <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-4 max-w-3xl">
-          {{ $t('compliancePage.hero.title') }}
-        </h1>
-        <p class="text-sm md:text-base text-gray-300 max-w-2xl leading-relaxed mb-8">
+        <p class="text-xs font-semibold uppercase tracking-widest text-brand-yellow mb-3">{{ $t('compliancePage.hero.title') }}</p>
+        <p class="text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed mb-8">
           {{ $t('compliancePage.hero.description') }}
         </p>
         <a href="/contact" class="inline-block px-5 py-2.5 bg-brand-red text-white text-sm font-semibold rounded hover:bg-red-700 transition-colors">

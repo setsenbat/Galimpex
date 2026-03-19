@@ -64,7 +64,7 @@
       "from": "起价",
       "mostPopular": "最受欢迎",
       "basic": {
-        "title": "基础版",
+        "title": "Standard",
         "price": "₮150,000",
         "subtitle": "适合小型办公室",
         "annual": "年度检查",
@@ -72,7 +72,7 @@
         "support": "电话支持"
       },
       "standard": {
-        "title": "标准版",
+        "title": "Professional",
         "price": "₮350,000",
         "quarterly": "季度检查",
         "training": "员工培训",
@@ -80,7 +80,7 @@
         "sla": "响应SLA"
       },
       "premium": {
-        "title": "高级版",
+        "title": "Premium",
         "price": "₮750,000",
         "subtitle": "适合工业设施",
         "monthly": "月度检查",
@@ -447,7 +447,7 @@
         "feature2": "灭火器检查/充装",
         "feature3": "基本合规清单",
         "feature4": "电话支持",
-        "cta": "选择基础版"
+        "cta": "选择 Standard"
       },
       "standard": {
         "target": "适合商业建筑和成长中的企业",
@@ -456,7 +456,7 @@
         "feature3": "员工安全意识培训",
         "feature4": "合规清单",
         "feature5": "优先调度",
-        "cta": "选择标准版"
+        "cta": "选择 Professional"
       },
       "premium": {
         "target": "适合工业、采矿和复杂设施",
@@ -480,9 +480,9 @@
     "comparison": {
       "title": "详细套餐比较",
       "feature": "功能",
-      "basic": "基础版",
-      "standard": "标准版",
-      "premium": "高级版",
+      "basic": "Standard",
+      "standard": "Professional",
+      "premium": "Premium",
       "inspection": "定期检查",
       "refill": "灭火器充装",
       "system": "报警/系统检查",
@@ -503,11 +503,11 @@
     },
     "whoFor": {
       "title": "适合哪些人？",
-      "basicTitle": "基础版",
+      "basicTitle": "Standard",
       "basicTarget": "小型办公室、商店、诊所",
-      "standardTitle": "标准版",
+      "standardTitle": "Professional",
       "standardTarget": "商业建筑、学校、餐厅",
-      "premiumTitle": "高级版",
+      "premiumTitle": "Premium",
       "premiumTarget": "工厂、仓库、采矿、大型设施"
     },
     "process": {
@@ -523,11 +523,11 @@
       "q1": "以后可以升级吗？",
       "a1": "是的，您可以随时升级套餐。我们的团队将相应调整您的服务计划和定价。",
       "q2": "充装是否包含在内？",
-      "a2": "灭火器充装包含在标准版和高级版套餐中，基础版可作为附加服务提供。",
+      "a2": "灭火器充装包含在 Professional 和 Premium 套餐中，Standard 可作为附加服务提供。",
       "q3": "您支持多地点公司吗？",
       "a3": "是的，我们支持拥有多个地点的组织。请联系我们获取定制的多地点套餐。",
       "q4": "您会为审计出具服务记录吗？",
-      "a4": "是的，所有套餐都包含服务记录。标准版和高级版套餐包含完整的审计就绪文件。",
+      "a4": "是的，所有套餐都包含服务记录。Professional 和 Premium 套餐包含完整的审计就绪文件。",
       "q5": "套餐可以定制吗？",
       "a5": "是的，所有套餐都可以根据您设施的具体要求进行定制。请联系我们的工程师获取定制报价。"
     },
@@ -583,29 +583,37 @@
       "office": "办公"
     },
     "projects": {
-      "khaanbank": {
-        "name": "汗银行",
+      "tdb": {
+        "name": "TDB银行",
         "location": "乌兰巴托，蒙古",
-        "description": "为服务器机房和关键银行基础设施安装火灾报警系统及FM-200洁净气体灭火系统。",
+        "description": "为大型商业银行总部大楼进行火灾报警系统设计及FM-200灭火系统安装。",
         "tag1": "FM-200系统",
         "tag2": "火灾报警",
-        "tag3": "灭火器供应"
+        "tag3": "系统设计"
       },
-      "amgalan": {
-        "name": "阿木嘎楞发电厂",
+      "datacenter": {
+        "name": "数据中心",
         "location": "乌兰巴托，蒙古",
-        "description": "为城市主要发电设施提供工业消防系统及全面的消防安全设备供应。",
-        "tag1": "工业消防",
-        "tag2": "设备供应",
-        "tag3": "合规服务"
+        "description": "为关键IT基础设施提供高灵敏度早期预警火灾探测及FM-200洁净气体灭火系统。",
+        "tag1": "FM-200系统",
+        "tag2": "早期探测",
+        "tag3": "IT基础设施"
       },
-      "mandala": {
-        "name": "曼陀罗大厦",
+      "makhimpex": {
+        "name": "Makh Impex",
         "location": "乌兰巴托，蒙古",
-        "description": "为现代高层综合楼提供端到端火灾报警安装及自动灭火系统。",
+        "description": "为大型食品加工与配送设施提供全面的消防安全系统设计、安装及维护服务。",
+        "tag1": "系统设计",
+        "tag2": "系统安装",
+        "tag3": "维护服务"
+      },
+      "regis": {
+        "name": "Regis大厦",
+        "location": "乌兰巴托，蒙古",
+        "description": "为高端商业大厦提供完整消防安全工程，包括报警系统、灭火系统及合规文件。",
         "tag1": "火灾报警",
         "tag2": "灭火系统",
-        "tag3": "系统安装"
+        "tag3": "合规服务"
       },
       "rivergarden": {
         "name": "河园",
@@ -615,29 +623,13 @@
         "tag2": "火灾报警",
         "tag3": "检查服务"
       },
-      "shunkhlai": {
-        "name": "顺克来",
-        "location": "乌兰巴托，蒙古",
-        "description": "为多层办公楼提供灭火器供应、报警系统安装及年度检查计划。",
-        "tag1": "设备供应",
-        "tag2": "报警系统",
-        "tag3": "年度检查"
-      },
-      "songodo": {
-        "name": "松戈多酒店",
-        "location": "乌兰巴托，蒙古",
-        "description": "酒店消防安全综合方案，包括报警系统、灭火器供应和员工消防培训。",
-        "tag1": "火灾报警",
-        "tag2": "设备供应",
-        "tag3": "员工培训"
-      },
-      "tsetsii": {
-        "name": "策策伊风力发电场",
+      "salhin": {
+        "name": "萨尔欣风力发电场",
         "location": "南戈壁，蒙古",
-        "description": "为蒙古南部偏远地区运营的风电场提供消防系统和安全设备。",
+        "description": "为蒙古南部偏远地区大型风电场提供消防灭火系统及安全设备供应。",
         "tag1": "现场消防",
         "tag2": "设备供应",
-        "tag3": "工业项目"
+        "tag3": "能源项目"
       },
       "eco25": {
         "name": "Eco 25",
@@ -646,6 +638,14 @@
         "tag1": "FM-200系统",
         "tag2": "火灾报警",
         "tag3": "高端安装"
+      },
+      "volvo": {
+        "name": "沃尔沃展厅",
+        "location": "乌兰巴托，蒙古",
+        "description": "为汽车展厅及服务设施安装火灾探测与灭火系统。",
+        "tag1": "火灾探测",
+        "tag2": "灭火系统",
+        "tag3": "商业项目"
       }
     },
     "cta": {

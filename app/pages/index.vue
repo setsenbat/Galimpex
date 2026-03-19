@@ -20,7 +20,7 @@
             <h2 class="text-lg md:text-xl font-bold text-brand-text/90 mb-4">
               {{ $t('landing.hero.subtitle') }}
             </h2>
-            <p class="text-sm text-brand-text/70 leading-relaxed mb-8 max-w-sm">
+            <p class="text-base text-brand-text/70 leading-relaxed mb-8 max-w-sm">
               {{ $t('landing.hero.description') }}
             </p>
             <div class="flex items-center gap-3">

@@ -16,6 +16,12 @@ export default defineNuxtConfig({
     defaultLocale: 'mn',
     langDir: '../i18n/locales/',
     strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_locale',
+      redirectOn: 'all',
+      alwaysRedirect: true,
+    },
   },
   vite: {
     plugins: [tailwindcss()],

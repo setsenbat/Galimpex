@@ -583,29 +583,37 @@
       "office": "Office"
     },
     "projects": {
-      "khaanbank": {
-        "name": "Khan Bank",
+      "tdb": {
+        "name": "TDB Bank",
         "location": "Ulaanbaatar, Mongolia",
-        "description": "Fire alarm system and FM-200 clean agent suppression for server rooms and critical banking infrastructure.",
+        "description": "Fire alarm system design and FM-200 suppression installation for a major commercial bank headquarters tower.",
         "tag1": "FM-200 Suppression",
         "tag2": "Fire Alarm System",
-        "tag3": "Extinguisher Supply"
+        "tag3": "System Design"
       },
-      "amgalan": {
-        "name": "Amgalan Power Plant",
+      "datacenter": {
+        "name": "Data Center",
         "location": "Ulaanbaatar, Mongolia",
-        "description": "Industrial fire suppression and comprehensive fire safety equipment supply for a major urban power generation facility.",
-        "tag1": "Industrial Suppression",
-        "tag2": "Equipment Supply",
-        "tag3": "Compliance"
+        "description": "High-sensitivity early warning fire detection and FM-200 clean agent suppression for critical IT infrastructure.",
+        "tag1": "FM-200 Suppression",
+        "tag2": "Early Detection",
+        "tag3": "IT Infrastructure"
       },
-      "mandala": {
-        "name": "Mandala Tower",
+      "makhimpex": {
+        "name": "Makh Impex",
         "location": "Ulaanbaatar, Mongolia",
-        "description": "End-to-end fire alarm installation and automatic suppression system for a modern high-rise mixed-use building.",
+        "description": "Comprehensive fire safety system design, installation and maintenance for a major food processing and distribution facility.",
+        "tag1": "System Design",
+        "tag2": "Installation",
+        "tag3": "Maintenance"
+      },
+      "regis": {
+        "name": "Regis Tower",
+        "location": "Ulaanbaatar, Mongolia",
+        "description": "Full fire safety engineering including alarm system, suppression and compliance documentation for a premium commercial tower.",
         "tag1": "Fire Alarm",
         "tag2": "Suppression System",
-        "tag3": "Installation"
+        "tag3": "Compliance"
       },
       "rivergarden": {
         "name": "River Garden",
@@ -615,29 +623,13 @@
         "tag2": "Fire Alarm",
         "tag3": "Inspection"
       },
-      "shunkhlai": {
-        "name": "Shunkhlai",
-        "location": "Ulaanbaatar, Mongolia",
-        "description": "Fire extinguisher supply, alarm system installation and annual inspection program for a multi-story office complex.",
-        "tag1": "Equipment Supply",
-        "tag2": "Alarm System",
-        "tag3": "Annual Inspection"
-      },
-      "songodo": {
-        "name": "Songodo Hotel",
-        "location": "Ulaanbaatar, Mongolia",
-        "description": "Hotel fire safety solution including alarm system, extinguisher supply and staff fire safety training.",
-        "tag1": "Fire Alarm",
-        "tag2": "Equipment Supply",
-        "tag3": "Staff Training"
-      },
-      "tsetsii": {
-        "name": "Tsetsii Wind Power",
+      "salhin": {
+        "name": "Salhin Wind Power",
         "location": "South Gobi, Mongolia",
-        "description": "Fire suppression and safety equipment for a wind turbine farm operating in remote southern Mongolia.",
+        "description": "Fire suppression and safety equipment supply for a large-scale wind turbine farm in remote southern Mongolia.",
         "tag1": "Site Fire Safety",
         "tag2": "Equipment Supply",
-        "tag3": "Industrial"
+        "tag3": "Energy"
       },
       "eco25": {
         "name": "Eco 25",
@@ -646,6 +638,14 @@
         "tag1": "FM-200 Suppression",
         "tag2": "Fire Alarm",
         "tag3": "Premium Installation"
+      },
+      "volvo": {
+        "name": "Volvo Showroom",
+        "location": "Ulaanbaatar, Mongolia",
+        "description": "Fire detection and suppression system installation for an automotive showroom and service facility.",
+        "tag1": "Fire Detection",
+        "tag2": "Suppression",
+        "tag3": "Commercial"
       }
     },
     "cta": {

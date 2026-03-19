@@ -6,10 +6,7 @@
       <div class="absolute inset-0 bg-black/75"></div>
       <div class="max-w-7xl mx-auto relative z-10">
         <p class="text-xs font-semibold uppercase tracking-widest text-brand-yellow mb-3">{{ $t('projectsPage.hero.label') }}</p>
-        <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-4 max-w-3xl">
-          {{ $t('projectsPage.hero.title') }}
-        </h1>
-        <p class="text-sm md:text-base text-gray-300 max-w-2xl leading-relaxed mb-8">
+        <p class="text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed mb-8">
           {{ $t('projectsPage.hero.description') }}
         </p>
         <div class="flex flex-wrap gap-3">
@@ -107,14 +104,14 @@
 
 <script setup lang="ts">
 import heroBg from '~/assets/images/webImages/Mobicom-DC2.webp?url'
-import imgKhaanBank from '~/assets/images/projectImages/Khaan bank.png?url'
-import imgAmgalan from '~/assets/images/projectImages/Amgalan power plant.png?url'
-import imgMandala from '~/assets/images/projectImages/Mandala.png?url'
-import imgRiverGarden from '~/assets/images/projectImages/River garden.png?url'
-import imgShunkhlai from '~/assets/images/projectImages/Shunkhlai.png?url'
-import imgSongodo from '~/assets/images/projectImages/Songodo.png?url'
-import imgTsetsii from '~/assets/images/projectImages/Tsetsii wind power.png?url'
-import imgEco25 from '~/assets/images/projectImages/eco25.png?url'
+import imgTDB from '~/assets/images/projectImages/better quality/TDB.webp?url'
+import imgDataCenter from '~/assets/images/projectImages/better quality/datacenter.png?url'
+import imgMakhImpex from '~/assets/images/projectImages/better quality/makh_impex.webp?url'
+import imgRegis from '~/assets/images/projectImages/better quality/regis.webp?url'
+import imgRiverTower from '~/assets/images/projectImages/better quality/river tower1.webp?url'
+import imgSalhin from '~/assets/images/projectImages/better quality/salhin.png?url'
+import imgEco from '~/assets/images/projectImages/better quality/eco.png?url'
+import imgVolvo from '~/assets/images/projectImages/better quality/volvo showroom.webp?url'
 
 useHead({
   title: 'Projects — Gal Impex'
@@ -133,35 +130,44 @@ const filters = [
 
 const projects = [
   {
-    key: 'khaanbank',
-    image: imgKhaanBank,
+    key: 'tdb',
+    image: imgTDB,
     category: 'commercial',
-    nameKey: 'projectsPage.projects.khaanbank.name',
-    locationKey: 'projectsPage.projects.khaanbank.location',
-    descKey: 'projectsPage.projects.khaanbank.description',
-    tags: ['projectsPage.projects.khaanbank.tag1', 'projectsPage.projects.khaanbank.tag2', 'projectsPage.projects.khaanbank.tag3']
+    nameKey: 'projectsPage.projects.tdb.name',
+    locationKey: 'projectsPage.projects.tdb.location',
+    descKey: 'projectsPage.projects.tdb.description',
+    tags: ['projectsPage.projects.tdb.tag1', 'projectsPage.projects.tdb.tag2', 'projectsPage.projects.tdb.tag3']
   },
   {
-    key: 'amgalan',
-    image: imgAmgalan,
+    key: 'datacenter',
+    image: imgDataCenter,
     category: 'industrial',
-    nameKey: 'projectsPage.projects.amgalan.name',
-    locationKey: 'projectsPage.projects.amgalan.location',
-    descKey: 'projectsPage.projects.amgalan.description',
-    tags: ['projectsPage.projects.amgalan.tag1', 'projectsPage.projects.amgalan.tag2', 'projectsPage.projects.amgalan.tag3']
+    nameKey: 'projectsPage.projects.datacenter.name',
+    locationKey: 'projectsPage.projects.datacenter.location',
+    descKey: 'projectsPage.projects.datacenter.description',
+    tags: ['projectsPage.projects.datacenter.tag1', 'projectsPage.projects.datacenter.tag2', 'projectsPage.projects.datacenter.tag3']
   },
   {
-    key: 'mandala',
-    image: imgMandala,
+    key: 'makhimpex',
+    image: imgMakhImpex,
+    category: 'industrial',
+    nameKey: 'projectsPage.projects.makhimpex.name',
+    locationKey: 'projectsPage.projects.makhimpex.location',
+    descKey: 'projectsPage.projects.makhimpex.description',
+    tags: ['projectsPage.projects.makhimpex.tag1', 'projectsPage.projects.makhimpex.tag2', 'projectsPage.projects.makhimpex.tag3']
+  },
+  {
+    key: 'regis',
+    image: imgRegis,
     category: 'commercial',
-    nameKey: 'projectsPage.projects.mandala.name',
-    locationKey: 'projectsPage.projects.mandala.location',
-    descKey: 'projectsPage.projects.mandala.description',
-    tags: ['projectsPage.projects.mandala.tag1', 'projectsPage.projects.mandala.tag2', 'projectsPage.projects.mandala.tag3']
+    nameKey: 'projectsPage.projects.regis.name',
+    locationKey: 'projectsPage.projects.regis.location',
+    descKey: 'projectsPage.projects.regis.description',
+    tags: ['projectsPage.projects.regis.tag1', 'projectsPage.projects.regis.tag2', 'projectsPage.projects.regis.tag3']
   },
   {
     key: 'rivergarden',
-    image: imgRiverGarden,
+    image: imgRiverTower,
     category: 'commercial',
     nameKey: 'projectsPage.projects.rivergarden.name',
     locationKey: 'projectsPage.projects.rivergarden.location',
@@ -169,40 +175,31 @@ const projects = [
     tags: ['projectsPage.projects.rivergarden.tag1', 'projectsPage.projects.rivergarden.tag2', 'projectsPage.projects.rivergarden.tag3']
   },
   {
-    key: 'shunkhlai',
-    image: imgShunkhlai,
-    category: 'office',
-    nameKey: 'projectsPage.projects.shunkhlai.name',
-    locationKey: 'projectsPage.projects.shunkhlai.location',
-    descKey: 'projectsPage.projects.shunkhlai.description',
-    tags: ['projectsPage.projects.shunkhlai.tag1', 'projectsPage.projects.shunkhlai.tag2', 'projectsPage.projects.shunkhlai.tag3']
-  },
-  {
-    key: 'songodo',
-    image: imgSongodo,
-    category: 'hospitality',
-    nameKey: 'projectsPage.projects.songodo.name',
-    locationKey: 'projectsPage.projects.songodo.location',
-    descKey: 'projectsPage.projects.songodo.description',
-    tags: ['projectsPage.projects.songodo.tag1', 'projectsPage.projects.songodo.tag2', 'projectsPage.projects.songodo.tag3']
-  },
-  {
-    key: 'tsetsii',
-    image: imgTsetsii,
+    key: 'salhin',
+    image: imgSalhin,
     category: 'energy',
-    nameKey: 'projectsPage.projects.tsetsii.name',
-    locationKey: 'projectsPage.projects.tsetsii.location',
-    descKey: 'projectsPage.projects.tsetsii.description',
-    tags: ['projectsPage.projects.tsetsii.tag1', 'projectsPage.projects.tsetsii.tag2', 'projectsPage.projects.tsetsii.tag3']
+    nameKey: 'projectsPage.projects.salhin.name',
+    locationKey: 'projectsPage.projects.salhin.location',
+    descKey: 'projectsPage.projects.salhin.description',
+    tags: ['projectsPage.projects.salhin.tag1', 'projectsPage.projects.salhin.tag2', 'projectsPage.projects.salhin.tag3']
   },
   {
     key: 'eco25',
-    image: imgEco25,
+    image: imgEco,
     category: 'commercial',
     nameKey: 'projectsPage.projects.eco25.name',
     locationKey: 'projectsPage.projects.eco25.location',
     descKey: 'projectsPage.projects.eco25.description',
     tags: ['projectsPage.projects.eco25.tag1', 'projectsPage.projects.eco25.tag2', 'projectsPage.projects.eco25.tag3']
+  },
+  {
+    key: 'volvo',
+    image: imgVolvo,
+    category: 'commercial',
+    nameKey: 'projectsPage.projects.volvo.name',
+    locationKey: 'projectsPage.projects.volvo.location',
+    descKey: 'projectsPage.projects.volvo.description',
+    tags: ['projectsPage.projects.volvo.tag1', 'projectsPage.projects.volvo.tag2', 'projectsPage.projects.volvo.tag3']
   }
 ]
 

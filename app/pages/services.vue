@@ -5,11 +5,8 @@
     <section class="relative pt-32 pb-20 px-4 md:px-6 bg-brand-text bg-cover bg-center" :style="{ backgroundImage: `url(${heroBg})` }">
       <div class="absolute inset-0 bg-black/70"></div>
       <div class="max-w-7xl mx-auto relative z-10">
-        <p class="text-xs font-semibold uppercase tracking-widest text-brand-yellow mb-3">SERVICES</p>
-        <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-4 max-w-3xl">
-          {{ $t('servicesPage.hero.subtitle') }}
-        </h1>
-        <p class="text-sm md:text-base text-gray-300 max-w-2xl leading-relaxed mb-8">
+        <p class="text-xs font-semibold uppercase tracking-widest text-brand-yellow mb-3">{{ $t('servicesPage.hero.title') }}</p>
+        <p class="text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed mb-8">
           {{ $t('servicesPage.hero.description') }}
         </p>
         <div class="flex flex-wrap gap-3">
