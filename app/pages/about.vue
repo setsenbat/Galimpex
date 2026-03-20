@@ -20,28 +20,6 @@
       </div>
     </section>
 
-    <!-- Company Overview -->
-    <section class="py-16 px-4 md:px-6 max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-4">{{ $t('about.overview.title') }}</h2>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed">{{ $t('about.overview.description') }}</p>
-        </div>
-        <div class="bg-gray-50 rounded-lg p-8 border border-gray-100">
-          <div class="flex items-center gap-3 mb-4">
-            <Icon name="heroicons:building-office-2" class="w-8 h-8 text-brand-red" />
-            <span class="text-sm font-semibold text-brand-text">Gal Impex LLC</span>
-          </div>
-          <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
-            <div><span class="font-semibold text-brand-text">Founded</span><br/>1971</div>
-            <div><span class="font-semibold text-brand-text">Incorporated</span><br/>2002</div>
-            <div><span class="font-semibold text-brand-text">Certified</span><br/>ISO 9001:2015</div>
-            <div><span class="font-semibold text-brand-text">Location</span><br/>Ulaanbaatar, Mongolia</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Our Mission -->
     <section class="py-16 px-4 md:px-6 bg-brand-red">
       <div class="max-w-7xl mx-auto text-center">
@@ -217,7 +195,11 @@ const timeline = [
   { year: '2002', key: 'about.timeline.y2002' },
   { year: '2012', key: 'about.timeline.y2012' },
   { year: '2013', key: 'about.timeline.y2013' },
-  { year: '2018', key: 'about.timeline.y2018' }
+  { year: '2018', key: 'about.timeline.y2018' },
+  { year: '2019', key: 'about.timeline.y2019' },
+  { year: '2020', key: 'about.timeline.y2020' },
+  { year: '2023', key: 'about.timeline.y2023' },
+  { year: '2025', key: 'about.timeline.y2025' }
 ]
 
 const services = [
@@ -238,7 +220,7 @@ const stats = [
 const certifications = [
   { titleKey: 'about.certifications.iso', labelKey: 'about.certifications.isoLabel' },
   { titleKey: 'about.certifications.nfpa', labelKey: 'about.certifications.nfpaLabel' },
-  { titleKey: 'about.certifications.mircom', labelKey: 'about.certifications.mircomLabel' },
+  { titleKey: 'about.certifications.mns', labelKey: 'about.certifications.mnsLabel' },
   { titleKey: 'about.certifications.government', labelKey: 'about.certifications.governmentLabel' }
 ]
 </script>

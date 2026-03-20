@@ -132,7 +132,7 @@
             {{ $t('landing.packages.mostPopular') }}
           </span>
           <div class="font-bold text-brand-text text-lg mb-1">{{ $t('landing.packages.standard.title') }}</div>
-          <div class="text-xs text-gray-500 mb-5">&nbsp;</div>
+          <div class="text-xs text-gray-500 mb-5">{{ $t('landing.packages.standard.subtitle') }}</div>
           <ul class="space-y-2.5">
             <li v-for="f in standardFeatures" :key="f" class="flex items-start gap-2 text-sm text-gray-700">
               <Icon name="heroicons:check" class="w-4 h-4 text-brand-red mt-0.5 flex-shrink-0" />
@@ -158,7 +158,7 @@
     <!-- Compliance & Quality -->
     <section id="compliance" class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-16 border-t border-gray-100">
       <h2 class="text-2xl md:text-3xl font-bold text-brand-text mb-8">{{ $t('landing.compliance.title') }}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div v-for="card in complianceCards" :key="card.title" class="border border-gray-200 rounded p-6">
           <div class="font-semibold text-brand-text mb-2">{{ card.title }}</div>
           <p class="text-sm text-gray-500 leading-relaxed">{{ card.description }}</p>
@@ -311,29 +311,35 @@ const services = computed(() => [
 ])
 
 const basicFeatures = computed(() => [
-  t('landing.packages.basic.annual'),
-  t('landing.packages.basic.refill'),
-  t('landing.packages.basic.support'),
+  t('landing.packages.basic.feature1'),
+  t('landing.packages.basic.feature2'),
+  t('landing.packages.basic.feature3'),
+  t('landing.packages.basic.feature4'),
 ])
 
 const standardFeatures = computed(() => [
-  t('landing.packages.standard.quarterly'),
-  t('landing.packages.standard.training'),
-  t('landing.packages.standard.checklist'),
-  t('landing.packages.standard.sla'),
+  t('landing.packages.standard.feature1'),
+  t('landing.packages.standard.feature2'),
+  t('landing.packages.standard.feature3'),
+  t('landing.packages.standard.feature4'),
+  t('landing.packages.standard.feature5'),
 ])
 
 const premiumFeatures = computed(() => [
-  t('landing.packages.premium.monthly'),
-  t('landing.packages.premium.maintenance'),
-  t('landing.packages.premium.reporting'),
-  t('landing.packages.premium.engineer'),
+  t('landing.packages.premium.feature1'),
+  t('landing.packages.premium.feature2'),
+  t('landing.packages.premium.feature3'),
+  t('landing.packages.premium.feature4'),
+  t('landing.packages.premium.feature5'),
+  t('landing.packages.premium.feature6'),
+  t('landing.packages.premium.feature7'),
 ])
 
 const complianceCards = computed(() => [
   { title: t('landing.compliance.checklists.title'), description: t('landing.compliance.checklists.description') },
   { title: t('landing.compliance.proof.title'), description: t('landing.compliance.proof.description') },
   { title: t('landing.compliance.culture.title'), description: t('landing.compliance.culture.description') },
+  { title: t('landing.compliance.international.title'), description: t('landing.compliance.international.description') },
 ])
 
 
