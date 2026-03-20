@@ -36,11 +36,6 @@
           <div class="mb-4">
             <div class="font-bold text-brand-text text-xl mb-1">{{ $t('landing.packages.basic.title') }}</div>
             <div class="text-xs text-gray-400 mb-4">{{ $t('packagesPage.packages.basic.target') }}</div>
-            <div class="flex items-baseline gap-1">
-              <span class="text-sm text-gray-500">{{ $t('landing.packages.from') }}</span>
-              <span class="text-3xl font-bold text-brand-text">{{ $t('landing.packages.basic.price') }}</span>
-            </div>
-            <div class="text-xs text-gray-400 mt-1">/ {{ $t('landing.packages.basic.annual') }}</div>
           </div>
           <ul class="space-y-3 mb-8">
             <li v-for="i in 4" :key="i" class="flex items-start gap-2 text-sm text-gray-700">
@@ -61,11 +56,6 @@
           <div class="mb-4">
             <div class="font-bold text-brand-text text-xl mb-1">{{ $t('landing.packages.standard.title') }}</div>
             <div class="text-xs text-gray-400 mb-4">{{ $t('packagesPage.packages.standard.target') }}</div>
-            <div class="flex items-baseline gap-1">
-              <span class="text-sm text-gray-500">{{ $t('landing.packages.from') }}</span>
-              <span class="text-3xl font-bold text-brand-text">{{ $t('landing.packages.standard.price') }}</span>
-            </div>
-            <div class="text-xs text-gray-400 mt-1">/ {{ $t('landing.packages.standard.quarterly') }}</div>
           </div>
           <ul class="space-y-3 mb-8">
             <li v-for="i in 5" :key="i" class="flex items-start gap-2 text-sm text-gray-700">
@@ -83,11 +73,6 @@
           <div class="mb-4">
             <div class="font-bold text-brand-text text-xl mb-1">{{ $t('landing.packages.premium.title') }}</div>
             <div class="text-xs text-gray-400 mb-4">{{ $t('packagesPage.packages.premium.target') }}</div>
-            <div class="flex items-baseline gap-1">
-              <span class="text-sm text-gray-500">{{ $t('landing.packages.from') }}</span>
-              <span class="text-3xl font-bold text-brand-text">{{ $t('landing.packages.premium.price') }}</span>
-            </div>
-            <div class="text-xs text-gray-400 mt-1">/ {{ $t('landing.packages.premium.monthly') }}</div>
           </div>
           <ul class="space-y-3 mb-8">
             <li v-for="i in 6" :key="i" class="flex items-start gap-2 text-sm text-gray-700">

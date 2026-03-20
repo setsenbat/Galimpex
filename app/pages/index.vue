@@ -17,9 +17,6 @@
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-text leading-tight mb-4">
               {{ $t('landing.hero.title') }}
             </h1>
-            <h2 class="text-lg md:text-xl font-bold text-brand-text/90 mb-4">
-              {{ $t('landing.hero.subtitle') }}
-            </h2>
             <p class="text-base text-brand-text/70 leading-relaxed mb-8 max-w-sm">
               {{ $t('landing.hero.description') }}
             </p>
@@ -120,10 +117,6 @@
         <!-- Basic -->
         <div class="border border-gray-200 rounded p-6">
           <div class="font-bold text-brand-text text-lg mb-1">{{ $t('landing.packages.basic.title') }}</div>
-          <div class="flex items-baseline gap-1 mb-1">
-            <span class="text-sm text-gray-700">{{ $t('landing.packages.from') }}</span>
-            <span class="font-bold text-brand-text">{{ $t('landing.packages.basic.price') }}</span>
-          </div>
           <div class="text-xs text-gray-500 mb-5">{{ $t('landing.packages.basic.subtitle') }}</div>
           <ul class="space-y-2.5">
             <li v-for="f in basicFeatures" :key="f" class="flex items-start gap-2 text-sm text-gray-700">
@@ -139,10 +132,6 @@
             {{ $t('landing.packages.mostPopular') }}
           </span>
           <div class="font-bold text-brand-text text-lg mb-1">{{ $t('landing.packages.standard.title') }}</div>
-          <div class="flex items-baseline gap-1 mb-1">
-            <span class="text-sm text-gray-700">{{ $t('landing.packages.from') }}</span>
-            <span class="font-bold text-brand-text">{{ $t('landing.packages.standard.price') }}</span>
-          </div>
           <div class="text-xs text-gray-500 mb-5">&nbsp;</div>
           <ul class="space-y-2.5">
             <li v-for="f in standardFeatures" :key="f" class="flex items-start gap-2 text-sm text-gray-700">
@@ -155,10 +144,6 @@
         <!-- Premium -->
         <div class="border border-gray-200 rounded p-6">
           <div class="font-bold text-brand-text text-lg mb-1">{{ $t('landing.packages.premium.title') }}</div>
-          <div class="flex items-baseline gap-1 mb-1">
-            <span class="text-sm text-gray-700">{{ $t('landing.packages.from') }}</span>
-            <span class="font-bold text-brand-text">{{ $t('landing.packages.premium.price') }}</span>
-          </div>
           <div class="text-xs text-gray-500 mb-5">{{ $t('landing.packages.premium.subtitle') }}</div>
           <ul class="space-y-2.5">
             <li v-for="f in premiumFeatures" :key="f" class="flex items-start gap-2 text-sm text-gray-700">
