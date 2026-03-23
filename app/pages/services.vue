@@ -182,7 +182,7 @@
       </div>
     </section>
 
-    <!-- Why Gal Impex -->
+    <!-- Why Fire Impex -->
     <section class="py-16 px-4 md:px-6 max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         <div>
@@ -250,7 +250,7 @@ import imgDrills from '~/assets/images/webImages/mitchell-luo-wXs0mncHyfI-unspla
 import imgReport from '~/assets/images/webImages/image123.png?url'
 
 useHead({
-  title: 'Services — Gal Impex'
+  title: 'Services — Fire Impex'
 })
 
 const coreServices = [

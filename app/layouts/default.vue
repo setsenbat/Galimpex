@@ -13,13 +13,7 @@
           <!-- Brand -->
           <div class="col-span-2">
             <div class="flex items-center gap-3 mb-3">
-              <div class="w-9 h-9 bg-gray-900 text-white flex items-center justify-center font-bold text-sm rounded-sm">
-                GI
-              </div>
-              <div class="leading-tight">
-                <div class="font-bold text-brand-text text-sm">Gal Impex</div>
-                <div class="text-xs text-gray-500">{{ $t('landing.footer.tagline') }}</div>
-              </div>
+              <img src="~/assets/images/logo/logo_horizontal.png" alt="Fire Impex" class="h-9 rounded-sm" />
             </div>
             <p class="text-xs text-gray-500 leading-relaxed">
               {{ $t('landing.footer.description') }}
@@ -63,7 +57,7 @@
           </div>
         </div>
         <div class="border-t border-gray-200 pt-6 text-center text-xs text-gray-400">
-          © {{ new Date().getFullYear() }} Gal Impex. {{ $t('landing.footer.copyright') }}
+          © {{ new Date().getFullYear() }} Fire Impex LLC. {{ $t('landing.footer.copyright') }}
         </div>
       </div>
     </footer>

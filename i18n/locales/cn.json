@@ -132,7 +132,7 @@
     },
     "footer": {
       "tagline": "消防安全 | 蒙古",
-      "description": "Gal Impex – 您值得信赖的合作伙伴！",
+      "description": "Fire Impex – 您值得信赖的合作伙伴！",
       "company": {
         "title": "公司",
         "about": "关于我们",
@@ -161,15 +161,15 @@
   },
   "about": {
     "hero": {
-      "title": "关于 Gal Impex",
+      "title": "关于 Fire Impex",
       "subtitle": "自1971年起，蒙古消防安全工程的先驱",
-      "description": "五十多年来，Gal Impex 一直提供可靠的消防安全设备、系统和工程服务，保护生命、财产和运营安全。",
+      "description": "五十多年来，Fire Impex 一直提供可靠的消防安全设备、系统和工程服务，保护生命、财产和运营安全。",
       "ctaPrimary": "查看服务",
       "ctaSecondary": "联系我们"
     },
     "overview": {
       "title": "公司概况",
-      "description": "自1971年以来，Gal Impex 一直处于蒙古消防安全解决方案的前沿。公司提供从消防设备供应到系统安装、维护和专业咨询的全面服务。凭借数十年的经验和认证工程师，Gal Impex 为全国工业、商业和公共设施提供支持。"
+      "description": "自1971年以来，Fire Impex 一直处于蒙古消防安全解决方案的前沿。公司提供从消防设备供应到系统安装、维护和专业咨询的全面服务。凭借数十年的经验和认证工程师，Fire Impex 为全国工业、商业和公共设施提供支持。"
     },
     "mission": {
       "title": "我们的使命",
@@ -187,7 +187,7 @@
       "title": "我们的历程",
       "y1971": "作为蒙古第一家消防安全公司成立",
       "y1991": "蒙古市场改革后重组为 Gal 股份公司",
-      "y2002": "扩展消防安全解决方案和服务后成立 Gal Impex 有限责任公司",
+      "y2002": "扩展消防安全解决方案和服务后成立 Fire Impex 有限责任公司",
       "y2012": "将FM-200灭火系统引入蒙古市场",
       "y2013": "被任命为Mircom官方经销商并迁入新总部",
       "y2018": "获得ISO 9001:2015质量管理认证",
@@ -235,7 +235,7 @@
   "compliancePage": {
     "hero": {
       "title": "合规与安全标准",
-      "description": "通过专业检查、文件记录和维护计划，帮助设施遵守消防安全法规。Gal Impex 支持组织满足国家安全要求并保持检查准备状态。",
+      "description": "通过专业检查、文件记录和维护计划，帮助设施遵守消防安全法规。Fire Impex 支持组织满足国家安全要求并保持检查准备状态。",
       "button": "申请合规审查"
     },
     "why": {
@@ -258,21 +258,21 @@
       "fmLabel": "Factory Mutual 认证"
     },
     "services": {
-      "title": "合规支持服务",
-      "inspection": "消防安全检查",
-      "extinguisher": "灭火器测试和充装",
+      "title": "标准合规服务",
+      "inspection": "消防安全检查与审计",
+      "extinguisher": "灭火器检查与充装",
       "alarm": "火灾报警系统检查",
-      "signage": "应急标志和照明验证",
+      "signage": "紧急出口标识与照明检查",
       "risk": "火灾风险评估",
-      "training": "安全培训和演练"
+      "training": "安全操作培训与应急演练"
     },
     "documentation": {
       "title": "文件与报告",
-      "description": "我们的服务包括支持监管检查的清晰文件。",
-      "checklists": "检查清单",
+      "description": "服务过程和结果按照标准进行记录，完整维护所有报告和记录。",
+      "checklists": "检查表",
       "reports": "服务报告",
       "logs": "设备维护日志",
-      "recommendations": "合规建议"
+      "recommendations": "建议"
     },
     "process": {
       "title": "合规流程",
@@ -283,24 +283,24 @@
       "step5": "文件和报告"
     },
     "industries": {
-      "title": "我们支持的行业",
-      "commercial": "商业建筑",
-      "industrial": "工业设施",
-      "warehouses": "仓库",
-      "schools": "学校和大学",
-      "hospitals": "医院",
+      "title": "我们服务的行业",
+      "commercial": "办公室和商业中心",
+      "industrial": "工厂和制造设施",
+      "warehouses": "仓库和物流中心",
+      "schools": "教育机构",
+      "hospitals": "医疗机构",
       "hotels": "酒店和公共设施"
     },
     "cta": {
-      "title": "为您的设施做好消防安全检查准备。",
-      "description": "我们的工程师可以审查您的建筑并建议所需的合规措施。",
-      "button": "申请合规审查"
+      "title": "准备好让您的设施符合消防安全要求了吗？",
+      "description": "我们的工程师将检查您的建筑，识别风险和不足，并推荐必要的措施。",
+      "button": "申请评估"
     }
   },
   "contactPage": {
     "hero": {
       "title": "联系我们",
-      "subtitle": "与 Gal Impex 联系",
+      "subtitle": "与 Fire Impex 联系",
       "description": "我们的团队随时准备支持您的消防安全设备、系统安装、检查和工程需求。",
       "ctaPrimary": "申请报价",
       "ctaSecondary": "致电销售"
@@ -364,7 +364,7 @@
     "hero": {
       "title": "服务",
       "subtitle": "面向可靠合规设施的消防安全工程解决方案",
-      "description": "从设备供应到系统安装、检查和培训 — Gal Impex 支持消防安全管理的全生命周期。",
+      "description": "从设备供应到系统安装、检查和培训 — Fire Impex 支持消防安全管理的全生命周期。",
       "ctaPrimary": "申请报价",
       "ctaSecondary": "联系工程师"
     },
@@ -427,7 +427,7 @@
       "hotels": "酒店"
     },
     "why": {
-      "title": "为何选择 Gal Impex？",
+      "title": "为何选择 Fire Impex？",
       "bullet1": "50年以上实际经验",
       "bullet2": "认证系统和设备解决方案",
       "bullet3": "专业工程师和技术团队",
@@ -528,27 +528,27 @@
     "process": {
       "title": "工作流程",
       "step1": "现场勘查",
-      "step2": "套餐推荐",
-      "step3": "服务计划设置",
-      "step4": "开始检查/维护",
-      "step5": "报告和续约跟进"
+      "step2": "推荐合适套餐",
+      "step3": "制定服务计划",
+      "step4": "检查与维护",
+      "step5": "记录与持续监控"
     },
     "faq": {
       "title": "常见问题",
-      "q1": "以后可以升级吗？",
-      "a1": "是的，您可以随时升级套餐。我们的团队将相应调整您的服务计划和定价。",
+      "q1": "以后可以升级套餐吗？",
+      "a1": "可以。根据您设施的需求、风险等级和服务频率，可以随时升级到更高级别的套餐。",
       "q2": "充装是否包含在内？",
-      "a2": "灭火器充装包含在 Professional 和 Premium 套餐中，Standard 可作为附加服务提供。",
-      "q3": "您支持多地点公司吗？",
-      "a3": "是的，我们支持拥有多个地点的组织。请联系我们获取定制的多地点套餐。",
+      "a2": "是的。灭火器检查和充装根据所选套餐和服务范围包含在内。",
+      "q3": "贵公司为多地点企业提供服务吗？",
+      "a3": "是的。我们可以为多分支、多地点的组织提供统一的服务计划和服务记录。",
       "q4": "您会为审计出具服务记录吗？",
-      "a4": "是的，所有套餐都包含服务记录。Professional 和 Premium 套餐包含完整的审计就绪文件。",
-      "q5": "套餐可以定制吗？",
-      "a5": "是的，所有套餐都可以根据您设施的具体要求进行定制。请联系我们的工程师获取定制报价。"
+      "a4": "是的。服务记录、检查标记和日志均按照相关要求进行记录和归档。",
+      "q5": "套餐可以根据需求定制吗？",
+      "a5": "是的。服务套餐可以根据设施类型、使用情况和特定风险特征进行调整。"
     },
     "cta": {
-      "title": "不确定哪个套餐适合您的设施？",
-      "description": "我们的工程师可以根据您的建筑类型和合规需求推荐合适的方案。",
+      "title": "需要帮助选择合适的服务套餐吗？",
+      "description": "我们的工程师将根据建筑特点、使用情况和需求推荐最合适的套餐。",
       "ctaPrimary": "申请现场勘查",
       "ctaSecondary": "联系我们"
     },
@@ -567,19 +567,19 @@
     "hero": {
       "label": "项目案例",
       "title": "受蒙古各大领先机构信赖的合作伙伴",
-      "description": "从银行大楼、发电厂到酒店和风力发电场——Gal Impex为各行各业提供可靠的消防安全解决方案。",
+      "description": "从银行大楼、发电厂到酒店和风力发电场——Fire Impex为各行各业提供可靠的消防安全解决方案。",
       "ctaPrimary": "申请现场勘查",
       "ctaSecondary": "查看服务"
     },
     "stats": {
+      "yearsValue": "50+",
+      "yearsLabel": "年行业经验",
+      "clientsValue": "100+",
+      "clientsLabel": "客户组织",
       "projectsValue": "50+",
       "projectsLabel": "已完成项目",
-      "industriesValue": "5+",
-      "industriesLabel": "服务行业",
-      "yearsValue": "10+",
-      "yearsLabel": "从业年限",
-      "clientsValue": "100+",
-      "clientsLabel": "满意客户"
+      "objectsValue": "250+",
+      "objectsLabel": "已服务设施"
     },
     "filters": {
       "all": "全部项目",
@@ -598,69 +598,65 @@
       "office": "办公"
     },
     "projects": {
-      "tdb": {
-        "name": "TDB银行",
+      "khaanbank": {
+        "name": "可汗银行 – 数据中心",
         "location": "乌兰巴托，蒙古",
-        "description": "为大型商业银行总部大楼进行火灾报警系统设计及FM-200灭火系统安装。",
-        "tag1": "FM-200系统",
-        "tag2": "火灾报警",
-        "tag3": "系统设计"
-      },
-      "datacenter": {
-        "name": "数据中心",
-        "location": "乌兰巴托，蒙古",
-        "description": "为关键IT基础设施提供高灵敏度早期预警火灾探测及FM-200洁净气体灭火系统。",
-        "tag1": "FM-200系统",
-        "tag2": "早期探测",
-        "tag3": "IT基础设施"
-      },
-      "makhimpex": {
-        "name": "Makh Impex",
-        "location": "乌兰巴托，蒙古",
-        "description": "为大型食品加工与配送设施提供全面的消防安全系统设计、安装及维护服务。",
-        "tag1": "系统设计",
-        "tag2": "系统安装",
-        "tag3": "维护服务"
-      },
-      "regis": {
-        "name": "Regis大厦",
-        "location": "乌兰巴托，蒙古",
-        "description": "为高端商业大厦提供完整消防安全工程，包括报警系统、灭火系统及合规文件。",
+        "description": "为数据中心提供综合火灾报警和灭火系统的设计、安装和检查服务。",
         "tag1": "火灾报警",
-        "tag2": "灭火系统",
-        "tag3": "合规服务"
+        "tag2": "综合灭火系统",
+        "tag3": "检查服务",
+        "tag4": "数据中心"
       },
-      "rivergarden": {
-        "name": "河园",
+      "mobicom": {
+        "name": "Mobicom – 数据中心",
         "location": "乌兰巴托，蒙古",
-        "description": "为商业大楼提供完整的消防系统设计与安装，包括报警、灭火及持续检查计划。",
-        "tag1": "系统设计",
-        "tag2": "火灾报警",
-        "tag3": "检查服务"
+        "description": "为数据中心提供综合火灾报警和灭火系统的设计、安装和检查服务。",
+        "tag1": "火灾报警",
+        "tag2": "综合灭火系统",
+        "tag3": "检查服务",
+        "tag4": "数据中心"
       },
-      "salhin": {
-        "name": "萨尔欣风力发电场",
-        "location": "南戈壁，蒙古",
-        "description": "为蒙古南部偏远地区大型风电场提供消防灭火系统及安全设备供应。",
-        "tag1": "现场消防",
-        "tag2": "设备供应",
-        "tag3": "能源项目"
+      "shunkhlai": {
+        "name": "顺赫莱集团 – 数据中心",
+        "location": "乌兰巴托，蒙古",
+        "description": "为关键IT基础设施实施、安装和检查综合火灾报警和灭火系统。",
+        "tag1": "火灾报警",
+        "tag2": "综合灭火系统",
+        "tag3": "检查服务",
+        "tag4": "IT基础设施"
       },
       "eco25": {
         "name": "Eco 25",
         "location": "乌兰巴托，蒙古",
-        "description": "为高端现代办公楼提供FM-200数据机房保护及完整火灾报警系统。",
-        "tag1": "FM-200系统",
-        "tag2": "火灾报警",
-        "tag3": "高端安装"
+        "description": "为现代办公楼设计和安装综合火灾报警和灭火系统。",
+        "tag1": "火灾报警",
+        "tag2": "综合灭火系统",
+        "tag3": "办公楼"
       },
-      "volvo": {
-        "name": "沃尔沃展厅",
+      "mandala": {
+        "name": "Mandala 365",
         "location": "乌兰巴托，蒙古",
-        "description": "为汽车展厅及服务设施安装火灾探测与灭火系统。",
-        "tag1": "火灾探测",
-        "tag2": "灭火系统",
-        "tag3": "商业项目"
+        "description": "根据建筑用途和运营要求设计和安装综合火灾报警和灭火系统。",
+        "tag1": "火灾报警",
+        "tag2": "综合灭火系统",
+        "tag3": "商业建筑"
+      },
+      "amgalan": {
+        "name": "阿姆嘎兰热电厂",
+        "location": "乌兰巴托，蒙古",
+        "description": "消防安全系统的计划检查和维护服务，确保系统可靠运行。",
+        "tag1": "检查服务",
+        "tag2": "维护",
+        "tag3": "能源设施"
+      },
+      "tsetsii": {
+        "name": "策齐风力发电厂",
+        "location": "南戈壁，蒙古",
+        "description": "为风力发电机组和35千伏配电设施设计、安装和检查灭火系统。",
+        "tag1": "灭火系统",
+        "tag2": "检查服务",
+        "tag3": "能源",
+        "tag4": "基础设施"
       }
     },
     "cta": {

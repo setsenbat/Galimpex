@@ -104,17 +104,16 @@
 
 <script setup lang="ts">
 import heroBg from '~/assets/images/webImages/Mobicom-DC2.webp?url'
-import imgTDB from '~/assets/images/projectImages/better quality/TDB.webp?url'
-import imgDataCenter from '~/assets/images/projectImages/better quality/datacenter.png?url'
-import imgMakhImpex from '~/assets/images/projectImages/better quality/makh_impex.webp?url'
-import imgRegis from '~/assets/images/projectImages/better quality/regis.webp?url'
-import imgRiverTower from '~/assets/images/projectImages/better quality/river tower1.webp?url'
-import imgSalhin from '~/assets/images/projectImages/better quality/salhin.png?url'
+import imgKhaanBank from '~/assets/images/projectImages/Khaan bank.png?url'
+import imgMobicom from '~/assets/images/webImages/Mobicom-DC2.webp?url'
+import imgShunkhlai from '~/assets/images/projectImages/Shunkhlai.png?url'
 import imgEco from '~/assets/images/projectImages/better quality/eco.png?url'
-import imgVolvo from '~/assets/images/projectImages/better quality/volvo showroom.webp?url'
+import imgMandala from '~/assets/images/projectImages/better quality/Mandala.jpg?url'
+import imgAmgalan from '~/assets/images/projectImages/better quality/Amgalan.jpg?url'
+import imgTsetsii from '~/assets/images/projectImages/Tsetsii wind power.png?url'
 
 useHead({
-  title: 'Projects — Gal Impex'
+  title: 'Projects — Fire Impex'
 })
 
 const activeFilter = ref('all')
@@ -130,76 +129,67 @@ const filters = [
 
 const projects = [
   {
-    key: 'tdb',
-    image: imgTDB,
-    category: 'commercial',
-    nameKey: 'projectsPage.projects.tdb.name',
-    locationKey: 'projectsPage.projects.tdb.location',
-    descKey: 'projectsPage.projects.tdb.description',
-    tags: ['projectsPage.projects.tdb.tag1', 'projectsPage.projects.tdb.tag2', 'projectsPage.projects.tdb.tag3']
-  },
-  {
-    key: 'datacenter',
-    image: imgDataCenter,
+    key: 'khaanbank',
+    image: imgKhaanBank,
     category: 'industrial',
-    nameKey: 'projectsPage.projects.datacenter.name',
-    locationKey: 'projectsPage.projects.datacenter.location',
-    descKey: 'projectsPage.projects.datacenter.description',
-    tags: ['projectsPage.projects.datacenter.tag1', 'projectsPage.projects.datacenter.tag2', 'projectsPage.projects.datacenter.tag3']
+    nameKey: 'projectsPage.projects.khaanbank.name',
+    locationKey: 'projectsPage.projects.khaanbank.location',
+    descKey: 'projectsPage.projects.khaanbank.description',
+    tags: ['projectsPage.projects.khaanbank.tag1', 'projectsPage.projects.khaanbank.tag2', 'projectsPage.projects.khaanbank.tag3', 'projectsPage.projects.khaanbank.tag4']
   },
   {
-    key: 'makhimpex',
-    image: imgMakhImpex,
+    key: 'mobicom',
+    image: imgMobicom,
     category: 'industrial',
-    nameKey: 'projectsPage.projects.makhimpex.name',
-    locationKey: 'projectsPage.projects.makhimpex.location',
-    descKey: 'projectsPage.projects.makhimpex.description',
-    tags: ['projectsPage.projects.makhimpex.tag1', 'projectsPage.projects.makhimpex.tag2', 'projectsPage.projects.makhimpex.tag3']
+    nameKey: 'projectsPage.projects.mobicom.name',
+    locationKey: 'projectsPage.projects.mobicom.location',
+    descKey: 'projectsPage.projects.mobicom.description',
+    tags: ['projectsPage.projects.mobicom.tag1', 'projectsPage.projects.mobicom.tag2', 'projectsPage.projects.mobicom.tag3', 'projectsPage.projects.mobicom.tag4']
   },
   {
-    key: 'regis',
-    image: imgRegis,
-    category: 'commercial',
-    nameKey: 'projectsPage.projects.regis.name',
-    locationKey: 'projectsPage.projects.regis.location',
-    descKey: 'projectsPage.projects.regis.description',
-    tags: ['projectsPage.projects.regis.tag1', 'projectsPage.projects.regis.tag2', 'projectsPage.projects.regis.tag3']
-  },
-  {
-    key: 'rivergarden',
-    image: imgRiverTower,
-    category: 'commercial',
-    nameKey: 'projectsPage.projects.rivergarden.name',
-    locationKey: 'projectsPage.projects.rivergarden.location',
-    descKey: 'projectsPage.projects.rivergarden.description',
-    tags: ['projectsPage.projects.rivergarden.tag1', 'projectsPage.projects.rivergarden.tag2', 'projectsPage.projects.rivergarden.tag3']
-  },
-  {
-    key: 'salhin',
-    image: imgSalhin,
-    category: 'energy',
-    nameKey: 'projectsPage.projects.salhin.name',
-    locationKey: 'projectsPage.projects.salhin.location',
-    descKey: 'projectsPage.projects.salhin.description',
-    tags: ['projectsPage.projects.salhin.tag1', 'projectsPage.projects.salhin.tag2', 'projectsPage.projects.salhin.tag3']
+    key: 'shunkhlai',
+    image: imgShunkhlai,
+    category: 'industrial',
+    nameKey: 'projectsPage.projects.shunkhlai.name',
+    locationKey: 'projectsPage.projects.shunkhlai.location',
+    descKey: 'projectsPage.projects.shunkhlai.description',
+    tags: ['projectsPage.projects.shunkhlai.tag1', 'projectsPage.projects.shunkhlai.tag2', 'projectsPage.projects.shunkhlai.tag3', 'projectsPage.projects.shunkhlai.tag4']
   },
   {
     key: 'eco25',
     image: imgEco,
-    category: 'commercial',
+    category: 'office',
     nameKey: 'projectsPage.projects.eco25.name',
     locationKey: 'projectsPage.projects.eco25.location',
     descKey: 'projectsPage.projects.eco25.description',
     tags: ['projectsPage.projects.eco25.tag1', 'projectsPage.projects.eco25.tag2', 'projectsPage.projects.eco25.tag3']
   },
   {
-    key: 'volvo',
-    image: imgVolvo,
+    key: 'mandala',
+    image: imgMandala,
     category: 'commercial',
-    nameKey: 'projectsPage.projects.volvo.name',
-    locationKey: 'projectsPage.projects.volvo.location',
-    descKey: 'projectsPage.projects.volvo.description',
-    tags: ['projectsPage.projects.volvo.tag1', 'projectsPage.projects.volvo.tag2', 'projectsPage.projects.volvo.tag3']
+    nameKey: 'projectsPage.projects.mandala.name',
+    locationKey: 'projectsPage.projects.mandala.location',
+    descKey: 'projectsPage.projects.mandala.description',
+    tags: ['projectsPage.projects.mandala.tag1', 'projectsPage.projects.mandala.tag2', 'projectsPage.projects.mandala.tag3']
+  },
+  {
+    key: 'amgalan',
+    image: imgAmgalan,
+    category: 'energy',
+    nameKey: 'projectsPage.projects.amgalan.name',
+    locationKey: 'projectsPage.projects.amgalan.location',
+    descKey: 'projectsPage.projects.amgalan.description',
+    tags: ['projectsPage.projects.amgalan.tag1', 'projectsPage.projects.amgalan.tag2', 'projectsPage.projects.amgalan.tag3']
+  },
+  {
+    key: 'tsetsii',
+    image: imgTsetsii,
+    category: 'energy',
+    nameKey: 'projectsPage.projects.tsetsii.name',
+    locationKey: 'projectsPage.projects.tsetsii.location',
+    descKey: 'projectsPage.projects.tsetsii.description',
+    tags: ['projectsPage.projects.tsetsii.tag1', 'projectsPage.projects.tsetsii.tag2', 'projectsPage.projects.tsetsii.tag3', 'projectsPage.projects.tsetsii.tag4']
   }
 ]
 
@@ -210,10 +200,10 @@ const filteredProjects = computed(() =>
 )
 
 const heroStats = [
-  { valueKey: 'projectsPage.stats.projectsValue', labelKey: 'projectsPage.stats.projectsLabel' },
-  { valueKey: 'projectsPage.stats.industriesValue', labelKey: 'projectsPage.stats.industriesLabel' },
   { valueKey: 'projectsPage.stats.yearsValue', labelKey: 'projectsPage.stats.yearsLabel' },
-  { valueKey: 'projectsPage.stats.clientsValue', labelKey: 'projectsPage.stats.clientsLabel' }
+  { valueKey: 'projectsPage.stats.clientsValue', labelKey: 'projectsPage.stats.clientsLabel' },
+  { valueKey: 'projectsPage.stats.projectsValue', labelKey: 'projectsPage.stats.projectsLabel' },
+  { valueKey: 'projectsPage.stats.objectsValue', labelKey: 'projectsPage.stats.objectsLabel' }
 ]
 
 function categoryColor(category: string) {

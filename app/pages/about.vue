@@ -178,7 +178,7 @@
 import heroBg from '~/assets/images/webImages/The-Fundamentals-of-Fire-Safety-Prevention-Detection-and-Response-scaled (1).jpg?url'
 
 useHead({
-  title: 'About — Gal Impex'
+  title: 'About — Fire Impex'
 })
 
 const coreValues = {

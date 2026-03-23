@@ -296,7 +296,7 @@
 import heroBg from '~/assets/images/webImages/getty-images-y0GoEcI3p4A-unsplash.jpg?url'
 
 useHead({
-  title: 'Packages — Gal Impex'
+  title: 'Packages — Fire Impex'
 })
 
 const openFaq = ref<number | null>(null)

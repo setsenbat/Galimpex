@@ -5,7 +5,7 @@
       <div class="mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         <!-- Logo -->
         <a href="/" class="flex items-center ml-2 md:ml-6">
-          <img src="~/assets/images/logo/logo_horizontal.png" alt="Gal Impex" style="height: 3.5rem; width: auto; display: block;" />
+          <img src="~/assets/images/logo/logo_medium.png" alt="Fire Impex" style="height: 3.5rem; width: auto; display: block;" />
         </a>
         <!-- Nav links (desktop) -->
         <nav class="hidden md:flex items-center gap-8">

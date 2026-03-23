@@ -239,7 +239,7 @@
 import heroBg from '~/assets/images/webImages/isawred-PDbrz9VEAFA-unsplash.jpg?url'
 
 useHead({
-  title: 'Contact — Gal Impex'
+  title: 'Contact — Fire Impex'
 })
 
 const departments = [

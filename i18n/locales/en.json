@@ -132,7 +132,7 @@
     },
     "footer": {
       "tagline": "Fire Safety | Mongolia",
-      "description": "Gal Impex – Your Trusted Partner!",
+      "description": "Fire Impex – Your Trusted Partner!",
       "company": {
         "title": "Company",
         "about": "About Us",
@@ -161,7 +161,7 @@
   },
   "about": {
     "hero": {
-      "title": "About Gal Impex",
+      "title": "About Fire Impex",
       "subtitle": "Mongolia's Pioneer in Fire Safety Since 1971",
       "description": "Fire Impex is a Mongolian company established in 1971, with a long-standing presence in the fire safety industry. Backed by decades of experience and a skilled professional team, we reliably deliver comprehensive fire safety services—including the supply of fire safety equipment, system solutions, installation, maintenance, and fire extinguisher refilling—for high-demand facilities such as mining, energy, data centers, industrial plants, warehouses, offices, shopping centers, hospitals, and schools.",
       "ctaPrimary": "View Services",
@@ -169,7 +169,7 @@
     },
     "overview": {
       "title": "Company Overview",
-      "description": "Since 1971, Gal Impex has been at the forefront of fire safety solutions in Mongolia. The company provides comprehensive services ranging from fire equipment supply to system installation, maintenance and professional consulting. With decades of experience and certified engineers, Gal Impex supports industrial, commercial and public facilities across the country."
+      "description": "Since 1971, Fire Impex has been at the forefront of fire safety solutions in Mongolia. The company provides comprehensive services ranging from fire equipment supply to system installation, maintenance and professional consulting. With decades of experience and certified engineers, Fire Impex supports industrial, commercial and public facilities across the country."
     },
     "mission": {
       "title": "Our Mission",
@@ -187,7 +187,7 @@
       "title": "Our Journey",
       "y1971": "Established as Mongolia's first fire safety company",
       "y1991": "Reorganized as \"Gal\" JSC following Mongolia's market reforms",
-      "y2002": "Established as Gal Impex LLC with expanded fire safety solutions and services",
+      "y2002": "Established as Fire Impex LLC with expanded fire safety solutions and services",
       "y2012": "Introduced the FM-200 fire suppression system to the Mongolian market",
       "y2013": "Appointed as an official Mircom distributor and moved into a new headquarters",
       "y2018": "Achieved ISO 9001:2015 quality management certification",
@@ -258,21 +258,21 @@
       "fmLabel": "Factory Mutual Approved"
     },
     "services": {
-      "title": "Compliance Support Services",
-      "inspection": "Fire safety inspection",
-      "extinguisher": "Extinguisher testing and refill",
+      "title": "Compliance Services",
+      "inspection": "Fire safety inspection and audit",
+      "extinguisher": "Extinguisher inspection and refill",
       "alarm": "Fire alarm system inspection",
-      "signage": "Emergency signage and lighting verification",
+      "signage": "Emergency exit signage and lighting inspection",
       "risk": "Fire risk assessment",
-      "training": "Safety training and drills"
+      "training": "Safety training and emergency drills"
     },
     "documentation": {
       "title": "Documentation & Reporting",
-      "description": "Our services include clear documentation to support regulatory inspections.",
-      "checklists": "Inspection checklists",
+      "description": "Service progress and results are documented according to standards, with complete reports and records maintained.",
+      "checklists": "Inspection sheets",
       "reports": "Service reports",
       "logs": "Equipment maintenance logs",
-      "recommendations": "Compliance recommendations"
+      "recommendations": "Recommendations"
     },
     "process": {
       "title": "Compliance Process",
@@ -283,24 +283,24 @@
       "step5": "Documentation and reporting"
     },
     "industries": {
-      "title": "Industries We Support",
-      "commercial": "Commercial buildings",
-      "industrial": "Industrial facilities",
-      "warehouses": "Warehouses",
-      "schools": "Schools and universities",
-      "hospitals": "Hospitals",
+      "title": "Industries We Serve",
+      "commercial": "Offices and commercial centers",
+      "industrial": "Factories and manufacturing facilities",
+      "warehouses": "Warehouses and logistics centers",
+      "schools": "Educational institutions",
+      "hospitals": "Healthcare institutions",
       "hotels": "Hotels and public facilities"
     },
     "cta": {
-      "title": "Prepare your facility for fire safety inspection.",
-      "description": "Our engineers can review your building and recommend the required compliance actions.",
-      "button": "Request Compliance Review"
+      "title": "Ready to bring your facility into fire safety compliance?",
+      "description": "Our engineers will inspect your building, identify risks and gaps, and recommend the necessary actions.",
+      "button": "Request Assessment"
     }
   },
   "contactPage": {
     "hero": {
       "title": "Contact",
-      "subtitle": "Get in touch with Gal Impex",
+      "subtitle": "Get in touch with Fire Impex",
       "description": "Our team is ready to support your fire safety equipment, system design & installation, inspection, and engineering needs.",
       "ctaPrimary": "Request a Quote",
       "ctaSecondary": "Call Sales"
@@ -364,7 +364,7 @@
     "hero": {
       "title": "Services",
       "subtitle": "Fire Safety Engineering Solutions for Reliable and Compliant Facilities",
-      "description": "From equipment supply to system design & installation, inspection, and training — Gal Impex supports the full lifecycle of fire safety management.",
+      "description": "From equipment supply to system design & installation, inspection, and training — Fire Impex supports the full lifecycle of fire safety management.",
       "ctaPrimary": "Request a Quote",
       "ctaSecondary": "Contact an Engineer"
     },
@@ -427,7 +427,7 @@
       "hotels": "Hotels"
     },
     "why": {
-      "title": "Why Choose Gal Impex?",
+      "title": "Why Choose Fire Impex?",
       "bullet1": "50+ years of real-world experience",
       "bullet2": "Certified system and equipment solutions",
       "bullet3": "Skilled professional engineering and technical team",
@@ -528,27 +528,27 @@
     "process": {
       "title": "How It Works",
       "step1": "Site Survey",
-      "step2": "Package recommendation",
-      "step3": "Service schedule setup",
-      "step4": "Inspection / maintenance begins",
-      "step5": "Reporting and renewal follow-up"
+      "step2": "Recommend suitable package",
+      "step3": "Set service schedule",
+      "step4": "Inspection and maintenance",
+      "step5": "Records and ongoing monitoring"
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "q1": "Can we upgrade later?",
-      "a1": "Yes, you can upgrade your package at any time. Our team will adjust your service schedule and pricing accordingly.",
+      "q1": "Can I upgrade my package later?",
+      "a1": "Yes. Depending on your facility's needs, risk level, and service frequency, you can move to the next package tier at any time.",
       "q2": "Is refill included?",
-      "a2": "Extinguisher refill is included in Professional and Premium packages, and available as an add-on for Standard.",
-      "q3": "Do you support multi-site companies?",
-      "a3": "Yes, we support organizations with multiple locations. Contact us for a customized multi-site package.",
+      "a2": "Yes. Extinguisher inspection and refill are included depending on the selected package and scope of service.",
+      "q3": "Do you serve multi-site companies?",
+      "a3": "Yes. We can work with multi-branch, multi-location organizations with a unified schedule and service records.",
       "q4": "Do you issue service records for audit?",
-      "a4": "Yes, all packages include service records. Professional and Premium packages include full compliance-ready documentation.",
-      "q5": "Can packages be customized?",
-      "a5": "Yes, all packages can be tailored to your facility's specific requirements. Contact our engineers for a custom quote."
+      "a4": "Yes. Service records, inspection markings, and logs are documented in compliance with applicable requirements.",
+      "q5": "Can packages be customized to fit our needs?",
+      "a5": "Yes. Service packages can be adjusted based on facility type, usage, and specific risk characteristics."
     },
     "cta": {
-      "title": "Not sure which package fits your facility?",
-      "description": "Our engineer can recommend the right plan based on your building type and compliance needs.",
+      "title": "Need help choosing the right service package?",
+      "description": "Our engineers will recommend the most suitable package based on your building's characteristics, usage, and needs.",
       "ctaPrimary": "Request Site Survey",
       "ctaSecondary": "Contact us"
     },
@@ -572,14 +572,14 @@
       "ctaSecondary": "View Services"
     },
     "stats": {
+      "yearsValue": "50+",
+      "yearsLabel": "Years of Industry Experience",
+      "clientsValue": "100+",
+      "clientsLabel": "Client Organizations",
       "projectsValue": "50+",
       "projectsLabel": "Projects Completed",
-      "industriesValue": "5+",
-      "industriesLabel": "Industries Served",
-      "yearsValue": "10+",
-      "yearsLabel": "Years of Experience",
-      "clientsValue": "100+",
-      "clientsLabel": "Satisfied Clients"
+      "objectsValue": "250+",
+      "objectsLabel": "Facilities Served"
     },
     "filters": {
       "all": "All Projects",
@@ -598,69 +598,65 @@
       "office": "Office"
     },
     "projects": {
-      "tdb": {
-        "name": "TDB Bank",
+      "khaanbank": {
+        "name": "Khaan Bank – Data Center",
         "location": "Ulaanbaatar, Mongolia",
-        "description": "Fire alarm system design and FM-200 suppression installation for a major commercial bank headquarters tower.",
-        "tag1": "FM-200 Suppression",
-        "tag2": "Fire Alarm System",
-        "tag3": "System Design"
-      },
-      "datacenter": {
-        "name": "Data Center",
-        "location": "Ulaanbaatar, Mongolia",
-        "description": "High-sensitivity early warning fire detection and FM-200 clean agent suppression for critical IT infrastructure.",
-        "tag1": "FM-200 Suppression",
-        "tag2": "Early Detection",
-        "tag3": "IT Infrastructure"
-      },
-      "makhimpex": {
-        "name": "Makh Impex",
-        "location": "Ulaanbaatar, Mongolia",
-        "description": "Comprehensive fire safety system design, installation and maintenance for a major food processing and distribution facility.",
-        "tag1": "System Design",
-        "tag2": "Installation",
-        "tag3": "Maintenance"
-      },
-      "regis": {
-        "name": "Regis Tower",
-        "location": "Ulaanbaatar, Mongolia",
-        "description": "Full fire safety engineering including alarm system, suppression and compliance documentation for a premium commercial tower.",
+        "description": "Design, installation, and inspection services for integrated fire alarm and fire suppression systems for a data center.",
         "tag1": "Fire Alarm",
-        "tag2": "Suppression System",
-        "tag3": "Compliance"
+        "tag2": "Integrated Fire Suppression",
+        "tag3": "Inspection Services",
+        "tag4": "Data Center"
       },
-      "rivergarden": {
-        "name": "River Garden",
+      "mobicom": {
+        "name": "Mobicom – Data Center",
         "location": "Ulaanbaatar, Mongolia",
-        "description": "Full fire safety system design and installation for a commercial tower, including alarm, suppression, and ongoing inspection.",
-        "tag1": "System Design",
-        "tag2": "Fire Alarm",
-        "tag3": "Inspection"
+        "description": "Design, installation, and inspection services for integrated fire alarm and fire suppression systems for a data center.",
+        "tag1": "Fire Alarm",
+        "tag2": "Integrated Fire Suppression",
+        "tag3": "Inspection Services",
+        "tag4": "Data Center"
       },
-      "salhin": {
-        "name": "Salhin Wind Power",
-        "location": "South Gobi, Mongolia",
-        "description": "Fire suppression and safety equipment supply for a large-scale wind turbine farm in remote southern Mongolia.",
-        "tag1": "Site Fire Safety",
-        "tag2": "Equipment Supply",
-        "tag3": "Energy"
+      "shunkhlai": {
+        "name": "Shunkhlai Group – Data Center",
+        "location": "Ulaanbaatar, Mongolia",
+        "description": "Implementation, installation, and inspection of integrated fire alarm and fire suppression systems for critical IT infrastructure.",
+        "tag1": "Fire Alarm",
+        "tag2": "Integrated Fire Suppression",
+        "tag3": "Inspection Services",
+        "tag4": "IT Infrastructure"
       },
       "eco25": {
         "name": "Eco 25",
         "location": "Ulaanbaatar, Mongolia",
-        "description": "FM-200 data room protection and complete fire alarm system for a premium modern office tower.",
-        "tag1": "FM-200 Suppression",
-        "tag2": "Fire Alarm",
-        "tag3": "Premium Installation"
+        "description": "Design and installation of integrated fire alarm and fire suppression systems for a modern office building.",
+        "tag1": "Fire Alarm",
+        "tag2": "Integrated Fire Suppression",
+        "tag3": "Office Building"
       },
-      "volvo": {
-        "name": "Volvo Showroom",
+      "mandala": {
+        "name": "Mandala 365",
         "location": "Ulaanbaatar, Mongolia",
-        "description": "Fire detection and suppression system installation for an automotive showroom and service facility.",
-        "tag1": "Fire Detection",
-        "tag2": "Suppression",
-        "tag3": "Commercial"
+        "description": "Design and installation of integrated fire alarm and fire suppression systems tailored to building usage and operational requirements.",
+        "tag1": "Fire Alarm",
+        "tag2": "Integrated Fire Suppression",
+        "tag3": "Commercial Building"
+      },
+      "amgalan": {
+        "name": "Amgalan Thermal Power Plant",
+        "location": "Ulaanbaatar, Mongolia",
+        "description": "Planned inspection and maintenance services for fire safety systems to ensure reliable operation.",
+        "tag1": "Inspection Services",
+        "tag2": "Maintenance",
+        "tag3": "Energy Facility"
+      },
+      "tsetsii": {
+        "name": "Tsetsii Wind Power Plant",
+        "location": "South Gobi, Mongolia",
+        "description": "Design, installation, and inspection of fire suppression systems for wind turbines and 35 kV distribution facilities.",
+        "tag1": "Fire Suppression",
+        "tag2": "Inspection Services",
+        "tag3": "Energy",
+        "tag4": "Infrastructure"
       }
     },
     "cta": {
