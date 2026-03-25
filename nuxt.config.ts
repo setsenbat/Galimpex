@@ -23,6 +23,12 @@ export default defineNuxtConfig({
       alwaysRedirect: true,
     },
   },
+  devServer: {
+    port: 80
+  },
+  nitro: {
+    preset: 'node-server'
+  },
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
