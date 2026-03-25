@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     port: 80
   },
   nitro: {
-    preset: 'node-server'
+    preset: 'aws-amplify'
   },
   vite: {
     plugins: [tailwindcss()],
