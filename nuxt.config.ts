@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    smtpHost: process.env.SMTP_HOST || 'smtp.mail.mn',
+    smtpPort: process.env.SMTP_PORT || '465',
+    smtpUser: process.env.SMTP_USER || 'info@fire-impex.mn',
+    smtpPass: process.env.SMTP_PASS || 'Fire8888*'
+  },
   modules: ['@nuxtjs/i18n', '@nuxt/icon'],
   i18n: {
     locales: [

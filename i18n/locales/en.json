@@ -340,6 +340,11 @@
       "service": "Service Needed",
       "message": "Message",
       "submit": "Submit Inquiry",
+      "sending": "Sending...",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Failed to send message. Please try again later.",
+      "validation": "Please fill in all required fields.",
+      "invalidEmail": "Please enter a valid email address.",
       "serviceOptions": {
         "supply": "Equipment supply",
         "installation": "Fire system installation",

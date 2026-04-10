@@ -1,0 +1,33 @@
+$ORIGIN galimpex.mn.
+$TTL 7200
+
+; MX Records (email)
+@   38400   IN  MX  5   mx.mail.mn.
+@   38400   IN  MX  10  mx2.mail.mn.
+
+; TXT Records
+@   7200    IN  TXT "google-site-verification=YybTIAH5sWn20_hgI6t4hdlSNkIn8RWlKRuMzyGYUJY"
+@   38400   IN  TXT "v=spf1 include:spf.mail.mn include:_spf.google.com ~all"
+
+; A Records
+sales           7600    IN  A   103.168.178.178
+autoconfig      38400   IN  A   69.28.212.195
+autodiscover    38400   IN  A   69.28.212.195
+55116570.dns    38400   IN  A   209.99.17.56
+59693641.dns    38400   IN  A   209.99.17.56
+
+; CNAME Records - AWS Certificate Validation
+_c07cc1e08b1e1d8ce9db2c6339cafe74  7200    IN  CNAME   _49792e597c987648f893af3c7bafc56e.jkddzztszm.acm-validations.aws.
+
+; CNAME Records - Google Services
+mail        7200    IN  CNAME   ghs.google.com.
+calendar    7200    IN  CNAME   ghs.googlehosted.com.
+drive       7200    IN  CNAME   ghs.googlehosted.com.
+groups      7200    IN  CNAME   ghs.googlehosted.com.
+sites       7200    IN  CNAME   ghs.googlehosted.com.
+
+; CNAME Records - Mail Services (mailhostbox.com)
+smtp        38400   IN  CNAME   us2.smtp.mailhostbox.com.
+imap        38400   IN  CNAME   us2.imap.mailhostbox.com.
+pop         38400   IN  CNAME   us2.pop.mailhostbox.com.
+webmail     38400   IN  CNAME   us3.webmail.mailhostbox.com.

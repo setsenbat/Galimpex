@@ -139,14 +139,17 @@
         <!-- Form -->
         <div class="lg:col-span-2">
           <h2 class="text-2xl font-bold text-brand-text mb-6">{{ $t('contactPage.form.title') }}</h2>
-          <form class="space-y-4" @submit.prevent>
+          <form class="space-y-4" @submit.prevent="submitForm">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
+                v-model="form.name"
                 type="text"
+                required
                 :placeholder="$t('contactPage.form.name')"
                 class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors"
               />
               <input
+                v-model="form.company"
                 type="text"
                 :placeholder="$t('contactPage.form.company')"
                 class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors"
@@ -154,17 +157,24 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
+                v-model="form.phone"
                 type="tel"
+                required
                 :placeholder="$t('contactPage.form.phone')"
                 class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors"
               />
               <input
+                v-model="form.email"
                 type="email"
+                required
                 :placeholder="$t('contactPage.form.email')"
                 class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors"
               />
             </div>
-            <select class="w-full px-4 py-3 border border-gray-200 rounded text-sm text-gray-500 focus:outline-none focus:border-brand-red transition-colors bg-white">
+            <select
+              v-model="form.service"
+              class="w-full px-4 py-3 border border-gray-200 rounded text-sm text-gray-500 focus:outline-none focus:border-brand-red transition-colors bg-white"
+            >
               <option value="">{{ $t('contactPage.form.service') }}</option>
               <option value="supply">{{ $t('contactPage.form.serviceOptions.supply') }}</option>
               <option value="installation">{{ $t('contactPage.form.serviceOptions.installation') }}</option>
@@ -173,16 +183,27 @@
               <option value="compliance">{{ $t('contactPage.form.serviceOptions.compliance') }}</option>
             </select>
             <textarea
+              v-model="form.message"
               rows="5"
+              required
               :placeholder="$t('contactPage.form.message')"
               class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors resize-none"
             ></textarea>
-            <button
-              type="submit"
-              class="px-6 py-3 bg-brand-red text-white text-sm font-semibold rounded hover:bg-red-700 transition-colors"
-            >
-              {{ $t('contactPage.form.submit') }}
-            </button>
+            <div class="flex items-center gap-4 flex-wrap">
+              <button
+                type="submit"
+                :disabled="status === 'sending'"
+                class="px-6 py-3 bg-brand-red text-white text-sm font-semibold rounded hover:bg-red-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {{ status === 'sending' ? $t('contactPage.form.sending') : $t('contactPage.form.submit') }}
+              </button>
+              <p v-if="status === 'success'" class="text-sm text-brand-green font-medium">
+                {{ $t('contactPage.form.success') }}
+              </p>
+              <p v-else-if="status === 'error'" class="text-sm text-brand-red font-medium">
+                {{ errorMessage || $t('contactPage.form.error') }}
+              </p>
+            </div>
           </form>
         </div>
 
@@ -236,6 +257,8 @@
 </template>
 
 <script setup lang="ts">
+import { reactive, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import heroBg from '~/assets/images/webImages/isawred-PDbrz9VEAFA-unsplash.jpg?url'
 
 useHead({
@@ -252,4 +275,64 @@ const phones = [
   { titleKey: 'contactPage.overview.salesHotlineTitle', numberKey: 'contactPage.overview.salesHotlinePhone', number: '11-463614' },
   { titleKey: 'contactPage.overview.techSupportTitle', numberKey: 'contactPage.overview.techSupportPhone', number: '80840101' }
 ]
+
+const { t, locale } = useI18n()
+
+const form = reactive({
+  name: '',
+  company: '',
+  phone: '',
+  email: '',
+  service: '',
+  message: ''
+})
+
+type Status = 'idle' | 'sending' | 'success' | 'error'
+const status = ref<Status>('idle')
+const errorMessage = ref('')
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+async function submitForm() {
+  errorMessage.value = ''
+
+  if (!form.name.trim() || !form.phone.trim() || !form.email.trim() || !form.message.trim()) {
+    status.value = 'error'
+    errorMessage.value = t('contactPage.form.validation')
+    return
+  }
+
+  if (!EMAIL_REGEX.test(form.email.trim())) {
+    status.value = 'error'
+    errorMessage.value = t('contactPage.form.invalidEmail')
+    return
+  }
+
+  status.value = 'sending'
+
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: form.name.trim(),
+        company: form.company.trim(),
+        phone: form.phone.trim(),
+        email: form.email.trim(),
+        service: form.service,
+        message: form.message.trim(),
+        locale: locale.value
+      }
+    })
+    status.value = 'success'
+    form.name = ''
+    form.company = ''
+    form.phone = ''
+    form.email = ''
+    form.service = ''
+    form.message = ''
+  } catch (err: any) {
+    status.value = 'error'
+    errorMessage.value = err?.statusMessage || err?.data?.statusMessage || t('contactPage.form.error')
+  }
+}
 </script>
