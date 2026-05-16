@@ -3,6 +3,8 @@ import nodemailer from 'nodemailer'
 interface ContactPayload {
   name?: string
   company?: string
+  companyName?: string
+  regNumber?: string
   phone?: string
   email?: string
   service?: string
@@ -19,6 +21,8 @@ const CONFIRMATION_TEMPLATES = {
     fields: {
       name: 'Нэр',
       company: 'Байгууллага',
+      companyName: 'Байгууллагын нэр',
+      regNumber: 'Регистрийн дугаар',
       phone: 'Утас',
       email: 'И-мэйл',
       service: 'Үйлчилгээ',
@@ -36,6 +40,8 @@ const CONFIRMATION_TEMPLATES = {
     fields: {
       name: 'Name',
       company: 'Company',
+      companyName: 'Company name',
+      regNumber: 'Registration number',
       phone: 'Phone',
       email: 'Email',
       service: 'Service',
@@ -54,13 +60,15 @@ export default defineEventHandler(async (event) => {
 
   const name = body?.name?.trim() ?? ''
   const company = body?.company?.trim() ?? ''
+  const companyName = body?.companyName?.trim() ?? ''
+  const regNumber = body?.regNumber?.trim() ?? ''
   const phone = body?.phone?.trim() ?? ''
   const email = body?.email?.trim() ?? ''
   const service = body?.service?.trim() ?? ''
   const message = body?.message?.trim() ?? ''
   const locale = body?.locale === 'mn' ? 'mn' : 'en'
 
-  if (!name || !phone || !email || !message) {
+  if (!name || !companyName || !regNumber || !phone || !email || !message) {
     throw createError({
       statusCode: 400,
       statusMessage: 'Missing required fields'
@@ -99,6 +107,8 @@ export default defineEventHandler(async (event) => {
     <table cellpadding="6" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px;">
       <tr><td><strong>Name:</strong></td><td>${escape(name)}</td></tr>
       <tr><td><strong>Company:</strong></td><td>${escape(company) || '-'}</td></tr>
+      <tr><td><strong>Company name:</strong></td><td>${escape(companyName)}</td></tr>
+      <tr><td><strong>Registration number:</strong></td><td>${escape(regNumber)}</td></tr>
       <tr><td><strong>Phone:</strong></td><td>${escape(phone)}</td></tr>
       <tr><td><strong>Email:</strong></td><td>${escape(email)}</td></tr>
       <tr><td><strong>Service:</strong></td><td>${escape(service) || '-'}</td></tr>
@@ -111,6 +121,8 @@ export default defineEventHandler(async (event) => {
     '',
     `Name: ${name}`,
     `Company: ${company || '-'}`,
+    `Company name: ${companyName}`,
+    `Registration number: ${regNumber}`,
     `Phone: ${phone}`,
     `Email: ${email}`,
     `Service: ${service || '-'}`,
@@ -142,6 +154,8 @@ export default defineEventHandler(async (event) => {
   const summaryRowsHtml = [
     [tpl.fields.name, name],
     [tpl.fields.company, company],
+    [tpl.fields.companyName, companyName],
+    [tpl.fields.regNumber, regNumber],
     [tpl.fields.phone, phone],
     [tpl.fields.email, email],
     [tpl.fields.service, service],
@@ -168,6 +182,8 @@ export default defineEventHandler(async (event) => {
   const summaryRowsText = [
     [tpl.fields.name, name],
     [tpl.fields.company, company],
+    [tpl.fields.companyName, companyName],
+    [tpl.fields.regNumber, regNumber],
     [tpl.fields.phone, phone],
     [tpl.fields.email, email],
     [tpl.fields.service, service],

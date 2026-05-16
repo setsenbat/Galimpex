@@ -12,13 +12,13 @@
     },
     "hero": {
       "title": "您值得信赖的合作伙伴",
-      "description": "安全、合规与可靠服务。\n面向各类设施的消防安全综合解决方案——设备、系统及检查服务。",
+      "description": "提供安全、合规、可靠的消防安全综合解决方案，涵盖设备、系统及检测服务。",
       "ctaPrimary": "申请现场勘查",
-      "ctaSecondary": "探索服务",
+      "ctaSecondary": "了解服务",
       "checklist": {
         "title": "快速检查清单",
         "badge": "推荐",
-        "extinguisher": "灭火器检查 + 充装记录",
+        "extinguisher": "灭火器检测 + 充装记录",
         "alarm": "报警/探测系统维护",
         "evacuation": "疏散标志 + 应急照明",
         "training": "员工培训 + 演练支持",
@@ -35,7 +35,7 @@
     },
     "services": {
       "title": "产品 | 服务",
-      "description": "从设备供应到安装、定期检查和维护——我们提供全面的消防安全解决方案。我们的服务旨在确保您的设施长期可靠运营，同时随时准备好接受检查和满足监管要求。",
+      "description": "从设备供应到安装、定期检测与维护，我们提供全面的消防安全解决方案，确保您的设施长期稳定运行并符合监管要求。",
       "learnMore": "了解更多 →",
       "supply": {
         "title": "设备供应",
@@ -46,8 +46,8 @@
         "description": "根据设施和合规标准设计并安装火灾报警和灭火系统。"
       },
       "inspection": {
-        "title": "检查与充装",
-        "description": "定期检查、测试和灭火器充装服务，确保消防设备正常运行。"
+        "title": "检测与充装",
+        "description": "定期检测、测试和灭火器充装服务，确保消防设备正常运行。"
       },
       "drills": {
         "title": "培训与演练",
@@ -64,8 +64,8 @@
       "basic": {
         "title": "Standard",
         "subtitle": "办公室、餐厅、低风险环境",
-        "feature1": "计划检查",
-        "feature2": "灭火器检查/充装",
+        "feature1": "计划检测",
+        "feature2": "灭火器检测/充装",
         "feature3": "合规清单",
         "feature4": "电话咨询与支持",
         "cta": "选择 Standard"
@@ -73,18 +73,18 @@
       "standard": {
         "title": "Advanced",
         "subtitle": "购物中心、酒店、医院、学校",
-        "feature1": "季度检查",
-        "feature2": "设备和系统检查",
+        "feature1": "季度检测",
+        "feature2": "设备和系统检测",
         "feature3": "员工培训",
         "feature4": "清单、记录与报告",
-        "feature5": "计划外快速检查与维护",
+        "feature5": "计划外快速检测与维护",
         "cta": "选择 Advanced"
       },
       "premium": {
         "title": "Premium",
         "subtitle": "工业设施、矿业、数据中心、能源设施",
-        "feature1": "每月或计划检查日程",
-        "feature2": "灭火器+系统全面检查",
+        "feature1": "每月或计划检测日程",
+        "feature2": "灭火器+系统全面检测",
         "feature3": "保障性维护服务",
         "feature4": "合规就绪的服务记录与报告",
         "feature5": "员工演练支持",
@@ -125,6 +125,8 @@
       "address": "蒙古国乌兰巴托市苏赫巴托尔区第1区奥林匹克街3号9楼14240",
       "namePlaceholder": "姓名",
       "companyPlaceholder": "公司 / 楼宇",
+      "companyNamePlaceholder": "公司名称",
+      "regNumberPlaceholder": "公司注册号",
       "phonePlaceholder": "电话",
       "emailPlaceholder": "电子邮件",
       "messagePlaceholder": "留言",
@@ -143,7 +145,7 @@
         "title": "服务",
         "supply": "灭火器、设备及各类灭火剂",
         "installation": "系统安装",
-        "inspection": "检查与充装",
+        "inspection": "检测与充装",
         "training": "培训与演练"
       },
       "compliance": {
@@ -192,7 +194,7 @@
       "y2013": "被任命为Mircom官方经销商并迁入新总部",
       "y2018": "获得ISO 9001:2015质量管理认证",
       "y2019": "NFPA会员",
-      "y2020": "加强服务能力，重点关注检查、维护和长期客户支持",
+      "y2020": "加强服务能力，重点关注检测、维护和长期客户支持",
       "y2023": "国际合作伙伴",
       "y2025": "迈向更智能的综合消防安全解决方案"
     },
@@ -260,9 +262,9 @@
     "services": {
       "title": "标准合规服务",
       "inspection": "消防安全检查与审计",
-      "extinguisher": "灭火器检查与充装",
-      "alarm": "火灾报警系统检查",
-      "signage": "紧急出口标识与照明检查",
+      "extinguisher": "灭火器检测与充装",
+      "alarm": "火灾报警系统检测",
+      "signage": "紧急出口标识与照明检测",
       "risk": "火灾风险评估",
       "training": "安全操作培训与应急演练"
     },
@@ -301,7 +303,7 @@
     "hero": {
       "title": "联系我们",
       "subtitle": "与 Fire Impex 联系",
-      "description": "我们的团队随时准备支持您的消防安全设备、系统安装、检查和工程需求。",
+      "description": "我们的团队随时准备支持您的消防安全设备、系统安装、检测和工程需求。",
       "ctaPrimary": "申请报价",
       "ctaSecondary": "致电销售"
     },
@@ -335,6 +337,8 @@
       "title": "发送消息",
       "name": "姓名",
       "company": "公司",
+      "companyName": "公司名称",
+      "regNumber": "公司注册号",
       "phone": "电话",
       "email": "电子邮件",
       "service": "所需服务",
@@ -348,7 +352,7 @@
       "serviceOptions": {
         "supply": "设备供应",
         "installation": "消防系统安装",
-        "inspection": "检查与充装",
+        "inspection": "检测与充装",
         "training": "培训",
         "compliance": "合规支持"
       }
@@ -369,7 +373,7 @@
     "hero": {
       "title": "服务",
       "subtitle": "面向可靠合规设施的消防安全工程解决方案",
-      "description": "从设备供应到系统安装、检查和培训 — Fire Impex 支持消防安全管理的全生命周期。",
+      "description": "从设备供应到系统安装、检测和培训 — Fire Impex 支持消防安全管理的全生命周期。",
       "ctaPrimary": "申请报价",
       "ctaSecondary": "联系工程师"
     },
@@ -393,13 +397,13 @@
         "cta": "申请安装咨询"
       },
       "inspection": {
-        "title": "检查与充装",
-        "description": "定期检查和灭火器充装服务，保持设备正常运行。",
-        "bullet1": "灭火器检查",
+        "title": "检测与充装",
+        "description": "定期检测和灭火器充装服务，保持设备正常运行。",
+        "bullet1": "灭火器检测",
         "bullet2": "灭火器充装",
         "bullet3": "设备测试",
         "bullet4": "维护记录",
-        "cta": "预约检查"
+        "cta": "预约检测"
       },
       "drills": {
         "title": "培训与演练",
@@ -436,7 +440,7 @@
       "bullet1": "50年以上实际经验",
       "bullet2": "认证系统和设备解决方案",
       "bullet3": "专业工程师和技术团队",
-      "bullet4": "定期、可靠的检查和维护服务"
+      "bullet4": "定期、可靠的检测和维护服务"
     },
     "cta": {
       "title": "需要帮助为您的设施选择合适的消防安全解决方案？",
@@ -463,25 +467,25 @@
     "packages": {
       "basic": {
         "target": "办公室、餐厅、低风险环境",
-        "feature1": "计划检查",
-        "feature2": "灭火器检查/充装",
+        "feature1": "计划检测",
+        "feature2": "灭火器检测/充装",
         "feature3": "合规清单",
         "feature4": "电话咨询与支持",
         "cta": "选择 Standard"
       },
       "standard": {
         "target": "购物中心、酒店、医院、学校",
-        "feature1": "季度检查",
-        "feature2": "设备和系统检查",
+        "feature1": "季度检测",
+        "feature2": "设备和系统检测",
         "feature3": "员工培训",
         "feature4": "清单、记录与报告",
-        "feature5": "计划外快速检查与维护",
+        "feature5": "计划外快速检测与维护",
         "cta": "选择 Advanced"
       },
       "premium": {
         "target": "工业设施、矿业、数据中心、能源设施",
-        "feature1": "每月或计划检查日程",
-        "feature2": "灭火器+系统全面检查",
+        "feature1": "每月或计划检测日程",
+        "feature2": "灭火器+系统全面检测",
         "feature3": "保障性维护服务",
         "feature4": "合规就绪的服务记录与报告",
         "feature5": "员工演练支持",
@@ -503,9 +507,9 @@
       "basic": "Standard",
       "standard": "Advanced",
       "premium": "Premium",
-      "inspection": "定期检查",
+      "inspection": "定期检测",
       "refill": "灭火器充装",
-      "system": "报警/系统检查",
+      "system": "报警/系统检测",
       "training": "培训",
       "reports": "检查记录与报告",
       "engineer": "专属工程师",
@@ -535,7 +539,7 @@
       "step1": "现场勘查",
       "step2": "推荐合适套餐",
       "step3": "制定服务计划",
-      "step4": "检查与维护",
+      "step4": "检测与维护",
       "step5": "记录与持续监控"
     },
     "faq": {
@@ -543,7 +547,7 @@
       "q1": "以后可以升级套餐吗？",
       "a1": "可以。根据您设施的需求、风险等级和服务频率，可以随时升级到更高级别的套餐。",
       "q2": "充装是否包含在内？",
-      "a2": "是的。灭火器检查和充装根据所选套餐和服务范围包含在内。",
+      "a2": "是的。灭火器检测和充装根据所选套餐和服务范围包含在内。",
       "q3": "贵公司为多地点企业提供服务吗？",
       "a3": "是的。我们可以为多分支、多地点的组织提供统一的服务计划和服务记录。",
       "q4": "您会为审计出具服务记录吗？",
@@ -606,28 +610,28 @@
       "khaanbank": {
         "name": "可汗银行 – 数据中心",
         "location": "乌兰巴托，蒙古",
-        "description": "为数据中心提供综合火灾报警和灭火系统的设计、安装和检查服务。",
+        "description": "为数据中心提供综合火灾报警和灭火系统的设计、安装和检测服务。",
         "tag1": "火灾报警",
         "tag2": "综合灭火系统",
-        "tag3": "检查服务",
+        "tag3": "检测服务",
         "tag4": "数据中心"
       },
       "mobicom": {
         "name": "Mobicom – 数据中心",
         "location": "乌兰巴托，蒙古",
-        "description": "为数据中心提供综合火灾报警和灭火系统的设计、安装和检查服务。",
+        "description": "为数据中心提供综合火灾报警和灭火系统的设计、安装和检测服务。",
         "tag1": "火灾报警",
         "tag2": "综合灭火系统",
-        "tag3": "检查服务",
+        "tag3": "检测服务",
         "tag4": "数据中心"
       },
       "shunkhlai": {
         "name": "顺赫莱集团 – 数据中心",
         "location": "乌兰巴托，蒙古",
-        "description": "为关键IT基础设施实施、安装和检查综合火灾报警和灭火系统。",
+        "description": "为关键IT基础设施实施、安装和检测综合火灾报警和灭火系统。",
         "tag1": "火灾报警",
         "tag2": "综合灭火系统",
-        "tag3": "检查服务",
+        "tag3": "检测服务",
         "tag4": "IT基础设施"
       },
       "eco25": {
@@ -649,17 +653,17 @@
       "amgalan": {
         "name": "阿姆嘎兰热电厂",
         "location": "乌兰巴托，蒙古",
-        "description": "消防安全系统的计划检查和维护服务，确保系统可靠运行。",
-        "tag1": "检查服务",
+        "description": "消防安全系统的计划检测和维护服务，确保系统可靠运行。",
+        "tag1": "检测服务",
         "tag2": "维护",
         "tag3": "能源设施"
       },
       "tsetsii": {
         "name": "策齐风力发电厂",
         "location": "南戈壁，蒙古",
-        "description": "为风力发电机组和35千伏配电设施设计、安装和检查灭火系统。",
+        "description": "为风力发电机组和35千伏配电设施设计、安装和检测灭火系统。",
         "tag1": "灭火系统",
-        "tag2": "检查服务",
+        "tag2": "检测服务",
         "tag3": "能源",
         "tag4": "基础设施"
       }

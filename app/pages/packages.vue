@@ -235,6 +235,10 @@
               <input type="text" :placeholder="$t('landing.contact.companyPlaceholder')" class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors" />
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input type="text" required :placeholder="$t('landing.contact.companyNamePlaceholder')" class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors" />
+              <input type="text" required :placeholder="$t('landing.contact.regNumberPlaceholder')" class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors" />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input type="tel" :placeholder="$t('landing.contact.phonePlaceholder')" class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors" />
               <input type="email" :placeholder="$t('landing.contact.emailPlaceholder')" class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors" />
             </div>

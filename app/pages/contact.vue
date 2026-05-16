@@ -157,6 +157,22 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
+                v-model="form.companyName"
+                type="text"
+                required
+                :placeholder="$t('contactPage.form.companyName')"
+                class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors"
+              />
+              <input
+                v-model="form.regNumber"
+                type="text"
+                required
+                :placeholder="$t('contactPage.form.regNumber')"
+                class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors"
+              />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input
                 v-model="form.phone"
                 type="tel"
                 required
@@ -281,6 +297,8 @@ const { t, locale } = useI18n()
 const form = reactive({
   name: '',
   company: '',
+  companyName: '',
+  regNumber: '',
   phone: '',
   email: '',
   service: '',
@@ -296,7 +314,7 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 async function submitForm() {
   errorMessage.value = ''
 
-  if (!form.name.trim() || !form.phone.trim() || !form.email.trim() || !form.message.trim()) {
+  if (!form.name.trim() || !form.companyName.trim() || !form.regNumber.trim() || !form.phone.trim() || !form.email.trim() || !form.message.trim()) {
     status.value = 'error'
     errorMessage.value = t('contactPage.form.validation')
     return
@@ -316,6 +334,8 @@ async function submitForm() {
       body: {
         name: form.name.trim(),
         company: form.company.trim(),
+        companyName: form.companyName.trim(),
+        regNumber: form.regNumber.trim(),
         phone: form.phone.trim(),
         email: form.email.trim(),
         service: form.service,
@@ -326,6 +346,8 @@ async function submitForm() {
     status.value = 'success'
     form.name = ''
     form.company = ''
+    form.companyName = ''
+    form.regNumber = ''
     form.phone = ''
     form.email = ''
     form.service = ''

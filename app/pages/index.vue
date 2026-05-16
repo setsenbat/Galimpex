@@ -257,6 +257,20 @@
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input
+              type="text"
+              required
+              :placeholder="$t('landing.contact.companyNamePlaceholder')"
+              class="w-full border border-gray-200 rounded px-4 py-2.5 text-sm text-brand-text placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
+            />
+            <input
+              type="text"
+              required
+              :placeholder="$t('landing.contact.regNumberPlaceholder')"
+              class="w-full border border-gray-200 rounded px-4 py-2.5 text-sm text-brand-text placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
+            />
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <input
               type="tel"
               :placeholder="$t('landing.contact.phonePlaceholder')"
               class="w-full border border-gray-200 rounded px-4 py-2.5 text-sm text-brand-text placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
