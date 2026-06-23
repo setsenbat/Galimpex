@@ -205,10 +205,11 @@
               :placeholder="$t('contactPage.form.message')"
               class="w-full px-4 py-3 border border-gray-200 rounded text-sm focus:outline-none focus:border-brand-red transition-colors resize-none"
             ></textarea>
+            <NuxtTurnstile v-model="turnstileToken" />
             <div class="flex items-center gap-4 flex-wrap">
               <button
                 type="submit"
-                :disabled="status === 'sending'"
+                :disabled="status === 'sending' || !turnstileToken"
                 class="px-6 py-3 bg-brand-red text-white text-sm font-semibold rounded hover:bg-red-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {{ status === 'sending' ? $t('contactPage.form.sending') : $t('contactPage.form.submit') }}
@@ -308,6 +309,7 @@ const form = reactive({
 type Status = 'idle' | 'sending' | 'success' | 'error'
 const status = ref<Status>('idle')
 const errorMessage = ref('')
+const turnstileToken = ref('')
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -340,7 +342,8 @@ async function submitForm() {
         email: form.email.trim(),
         service: form.service,
         message: form.message.trim(),
-        locale: locale.value
+        locale: locale.value,
+        turnstileToken: turnstileToken.value
       }
     })
     status.value = 'success'
@@ -352,6 +355,7 @@ async function submitForm() {
     form.email = ''
     form.service = ''
     form.message = ''
+    turnstileToken.value = ''
   } catch (err: any) {
     status.value = 'error'
     errorMessage.value = err?.statusMessage || err?.data?.statusMessage || t('contactPage.form.error')

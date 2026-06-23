@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer'
+import { verifyTurnstileToken } from '#turnstile'
 
 interface ContactPayload {
   name?: string
@@ -10,6 +11,7 @@ interface ContactPayload {
   service?: string
   message?: string
   locale?: string
+  turnstileToken?: string
 }
 
 const CONFIRMATION_TEMPLATES = {
@@ -80,6 +82,16 @@ export default defineEventHandler(async (event) => {
       statusCode: 400,
       statusMessage: 'Invalid email address'
     })
+  }
+
+  const turnstileToken = body?.turnstileToken?.trim() ?? ''
+  if (!turnstileToken) {
+    throw createError({ statusCode: 400, statusMessage: 'Missing CAPTCHA token' })
+  }
+
+  const turnstileResult = await verifyTurnstileToken(turnstileToken)
+  if (!turnstileResult.success) {
+    throw createError({ statusCode: 400, statusMessage: 'CAPTCHA verification failed' })
   }
 
   const config = useRuntimeConfig()
