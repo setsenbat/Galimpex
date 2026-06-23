@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer'
-import { verifyTurnstileToken } from '#turnstile'
 
 interface ContactPayload {
   name?: string
@@ -89,7 +88,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Missing CAPTCHA token' })
   }
 
-  const turnstileResult = await verifyTurnstileToken(turnstileToken)
+  const turnstileResult = await verifyTurnstileToken(turnstileToken, event)
   if (!turnstileResult.success) {
     throw createError({ statusCode: 400, statusMessage: 'CAPTCHA verification failed' })
   }
